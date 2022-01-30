@@ -56,6 +56,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pop3Client", "EmailClient_P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmtpClient", "EmailClient_POP3_SMTP\SmtpClient\SmtpClient.csproj", "{B641CA12-FB5A-4BEB-880A-80E70193B105}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Pushbullet client", "05 Pushbullet client", "{4838893E-E6F1-43E4-BF4E-15DCAD2278A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushbulletClient", "PushbulletClient\PushbulletClient\PushbulletClient.csproj", "{D47A9B2F-F5C8-4B74-95B0-4A5B84B7B0E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -114,6 +118,10 @@ Global
 		{B641CA12-FB5A-4BEB-880A-80E70193B105}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B641CA12-FB5A-4BEB-880A-80E70193B105}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B641CA12-FB5A-4BEB-880A-80E70193B105}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D47A9B2F-F5C8-4B74-95B0-4A5B84B7B0E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D47A9B2F-F5C8-4B74-95B0-4A5B84B7B0E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D47A9B2F-F5C8-4B74-95B0-4A5B84B7B0E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D47A9B2F-F5C8-4B74-95B0-4A5B84B7B0E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -137,6 +145,7 @@ Global
 		{56EB4B45-C3B5-4A9C-A857-035E70D82E33} = {36CE9E6E-9E9C-4CB2-B2D6-B57670FAC210}
 		{4261923D-5BC0-43A8-9C07-C39C575B7800} = {FA972DE8-A6BB-4672-9907-25AFD16948B1}
 		{B641CA12-FB5A-4BEB-880A-80E70193B105} = {FA972DE8-A6BB-4672-9907-25AFD16948B1}
+		{D47A9B2F-F5C8-4B74-95B0-4A5B84B7B0E3} = {4838893E-E6F1-43E4-BF4E-15DCAD2278A2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {498C29EF-0474-4C7D-A825-BB7F36FA1E99}
