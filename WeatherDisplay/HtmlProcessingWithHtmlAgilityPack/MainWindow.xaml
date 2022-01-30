@@ -1,0 +1,18 @@
+﻿<Window x:Class="HtmlProcessingWithHtmlAgilityPack.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HtmlProcessingWithHtmlAgilityPack"
+        mc:Ignorable="d"
+        Title="The Weather" Height="200" Width="500" FontSize="30" Background="WhiteSmoke">
+    <Grid>
+        <Label Content="" Name="Town" Margin="30,10,27,0" VerticalAlignment="Top"
+               HorizontalContentAlignment="Center"/>
+
+        <Label Content="" Name="Temperature" Margin="30,60,27,0" 
+               VerticalAlignment="Top" Height="61" FontSize="36" FontWeight="Bold"
+               HorizontalContentAlignment="Center"/>
+
+    </Grid>
+</Window>
