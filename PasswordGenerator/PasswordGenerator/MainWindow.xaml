@@ -1,0 +1,22 @@
+﻿<Window x:Class="PasswordGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordGenerator"
+        mc:Ignorable="d"
+        Title="Password Generator" Height="430" MinHeight="430" MaxHeight="430" Width="800" MinWidth="600" FontSize="20" Background="WhiteSmoke">
+    <Grid>
+        <CheckBox Content="Uppercase letters"     HorizontalAlignment="Left" Margin="51,26,0,0"  Padding="5,-7,0,0" VerticalAlignment="Top" Name="CheckBox1" Click="CheckBox_Click"/>
+        <CheckBox Content="Lowercase letters"     HorizontalAlignment="Left" Margin="51,57,0,0"  Padding="5,-7,0,0" VerticalAlignment="Top" Name="CheckBox2" Click="CheckBox_Click"/>
+        <CheckBox Content="Numbers"               HorizontalAlignment="Left" Margin="51,88,0,0"  Padding="5,-7,0,0" VerticalAlignment="Top" Name="CheckBox3" Click="CheckBox_Click"/>
+        <CheckBox Content="Special characters"    HorizontalAlignment="Left" Margin="51,119,0,0" Padding="5,-7,0,0" VerticalAlignment="Top" Name="CheckBox4" Click="CheckBox_Click"/>
+        <Label    Content="Length"                HorizontalAlignment="Left" Margin="302,55,0,0" VerticalAlignment="Top"/>
+        <Label    Content="Character set"         HorizontalAlignment="Left" Margin="51,145,0,0" VerticalAlignment="Top"/>
+        <Label    Content=""                      HorizontalAlignment="Stretch" Margin="302,145,39,0" VerticalAlignment="Top" Name="labelCharacterset"/>
+        <TextBox  Text="20"                       HorizontalAlignment="Left" Margin="388,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51" FontSize="20" Name="TextboxLength"/>
+        <Button   Content="Generate new password" HorizontalAlignment="Left" Margin="51,193,0,0" VerticalAlignment="Top" Height="40" Width="248" FontSize="20" Click="Generate_Click"/>
+        <TextBox  Text="Result"                   HorizontalAlignment="Stretch" Margin="51,250,39,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Name="Result"/>
+        <Button   Content="Copy"                  HorizontalAlignment="Left" Margin="51,309,0,0" VerticalAlignment="Top" Height="40" Width="248" FontSize="20" Click="CopyToClipboard_Click"/>
+    </Grid>
+</Window>

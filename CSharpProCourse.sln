@@ -20,7 +20,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logging_with_NLog", "Loggin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Logging", "01 Logging", "{00A4BBC5-B56B-495F-B159-06832563615E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 WeatherDisplay using HTML download", "02 WeatherDisplay using HTML download", "{F26E6439-A1C0-4CF6-A015-506238D75605}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 WeatherDisplay using HTML download", "03 WeatherDisplay using HTML download", "{F26E6439-A1C0-4CF6-A015-506238D75605}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "A Simple solution (commandline)", "A Simple solution (commandline)", "{FA47C197-4CC2-4021-ADD2-F2D1F6C07948}"
 EndProject
@@ -38,13 +38,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CallingAnExternalProcess", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "D HTML processing with HtmlAgilityPack", "D HTML processing with HtmlAgilityPack", "{13F2E883-0AD1-4315-A618-2DB666047C72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlProcessingWithHtmlAgilityPack", "WeatherDisplay\HtmlProcessingWithHtmlAgilityPack\HtmlProcessingWithHtmlAgilityPack.csproj", "{97CEC428-C403-4318-ABD4-8AB14DAD0BCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HtmlProcessingWithHtmlAgilityPack", "WeatherDisplay\HtmlProcessingWithHtmlAgilityPack\HtmlProcessingWithHtmlAgilityPack.csproj", "{97CEC428-C403-4318-ABD4-8AB14DAD0BCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abraham.Weather", "WeatherDisplay\Abraham.Weather\Abraham.Weather.csproj", "{C1729892-9258-474B-84AB-31B7D07C373A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abraham.Weather", "WeatherDisplay\Abraham.Weather\Abraham.Weather.csproj", "{C1729892-9258-474B-84AB-31B7D07C373A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "E Unittests for D", "E Unittests for D", "{9723B1FC-EB30-47A1-A01E-9C2296139B35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbrahamWeather_Tests", "WeatherDisplay\AbrahamWeather_Tests\AbrahamWeather_Tests.csproj", "{DE3370E2-81BE-417B-8109-AED265F84C72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbrahamWeather_Tests", "WeatherDisplay\AbrahamWeather_Tests\AbrahamWeather_Tests.csproj", "{DE3370E2-81BE-417B-8109-AED265F84C72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 PasswordGenerator", "02 PasswordGenerator", "{36CE9E6E-9E9C-4CB2-B2D6-B57670FAC210}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordGenerator", "PasswordGenerator\PasswordGenerator\PasswordGenerator.csproj", "{56EB4B45-C3B5-4A9C-A857-035E70D82E33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -92,6 +96,10 @@ Global
 		{DE3370E2-81BE-417B-8109-AED265F84C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE3370E2-81BE-417B-8109-AED265F84C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE3370E2-81BE-417B-8109-AED265F84C72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56EB4B45-C3B5-4A9C-A857-035E70D82E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56EB4B45-C3B5-4A9C-A857-035E70D82E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56EB4B45-C3B5-4A9C-A857-035E70D82E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56EB4B45-C3B5-4A9C-A857-035E70D82E33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -112,6 +120,7 @@ Global
 		{C1729892-9258-474B-84AB-31B7D07C373A} = {13F2E883-0AD1-4315-A618-2DB666047C72}
 		{9723B1FC-EB30-47A1-A01E-9C2296139B35} = {F26E6439-A1C0-4CF6-A015-506238D75605}
 		{DE3370E2-81BE-417B-8109-AED265F84C72} = {9723B1FC-EB30-47A1-A01E-9C2296139B35}
+		{56EB4B45-C3B5-4A9C-A857-035E70D82E33} = {36CE9E6E-9E9C-4CB2-B2D6-B57670FAC210}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {498C29EF-0474-4C7D-A825-BB7F36FA1E99}
