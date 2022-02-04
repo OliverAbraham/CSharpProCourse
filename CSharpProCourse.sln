@@ -8,7 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 README", "00 README", "{
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11 Calculator with unittests", "11 Calculator with unittests", "{55B7355E-1E96-4052-8E7E-29CDEEC0AD16}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "32 Calculator with unittests", "32 Calculator with unittests", "{55B7355E-1E96-4052-8E7E-29CDEEC0AD16}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12 Error handling concepts", "12 Error handling concepts", "{14E275FE-AA8C-4CEC-88D7-F445E5D36E9A}"
 EndProject
@@ -20,7 +20,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logging_with_NLog", "Loggin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Logging", "01 Logging", "{00A4BBC5-B56B-495F-B159-06832563615E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13 WeatherDisplay using HTML download", "13 WeatherDisplay using HTML download", "{F26E6439-A1C0-4CF6-A015-506238D75605}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "31 WeatherDisplay using HTML download", "31 WeatherDisplay using HTML download", "{F26E6439-A1C0-4CF6-A015-506238D75605}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "A Simple solution (commandline)", "A Simple solution (commandline)", "{FA47C197-4CC2-4021-ADD2-F2D1F6C07948}"
 EndProject
@@ -46,45 +46,57 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "E Unittests for D", "E Unit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbrahamWeather_Tests", "WeatherDisplay\AbrahamWeather_Tests\AbrahamWeather_Tests.csproj", "{DE3370E2-81BE-417B-8109-AED265F84C72}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 PasswordGenerator", "02 PasswordGenerator", "{36CE9E6E-9E9C-4CB2-B2D6-B57670FAC210}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30 PasswordGenerator", "30 PasswordGenerator", "{36CE9E6E-9E9C-4CB2-B2D6-B57670FAC210}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasswordGenerator", "PasswordGenerator\PasswordGenerator\PasswordGenerator.csproj", "{56EB4B45-C3B5-4A9C-A857-035E70D82E33}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09 EmailClient_POP3_SMTP", "09 EmailClient_POP3_SMTP", "{FA972DE8-A6BB-4672-9907-25AFD16948B1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08 EmailClient_POP3_SMTP", "08 EmailClient_POP3_SMTP", "{FA972DE8-A6BB-4672-9907-25AFD16948B1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pop3Client", "EmailClient_POP3_SMTP\Pop3Client\Pop3Client.csproj", "{4261923D-5BC0-43A8-9C07-C39C575B7800}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmtpClient", "EmailClient_POP3_SMTP\SmtpClient\SmtpClient.csproj", "{B641CA12-FB5A-4BEB-880A-80E70193B105}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10 Pushbullet client", "10 Pushbullet client", "{4838893E-E6F1-43E4-BF4E-15DCAD2278A2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09 Pushbullet client", "09 Pushbullet client", "{4838893E-E6F1-43E4-BF4E-15DCAD2278A2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PushbulletClient", "PushbulletClient\PushbulletClient\PushbulletClient.csproj", "{D47A9B2F-F5C8-4B74-95B0-4A5B84B7B0E3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08 Percentage display", "08 Percentage display", "{9E85C794-E0D5-408F-A710-A6163EADD6F3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10 Percentage display", "10 Percentage display", "{9E85C794-E0D5-408F-A710-A6163EADD6F3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PercentageDisplay", "PercentageDisplay\PercentageDisplay\PercentageDisplay.csproj", "{13757099-7A2D-40FF-9DA3-03BEDD71EB4C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Parsing XML", "03 Parsing XML", "{D762EA79-409D-44CD-9FED-50531658BFD5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Parsing XML", "02 Parsing XML", "{D762EA79-409D-44CD-9FED-50531658BFD5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parsing_XML_with_XPathExpression", "Parsing XML\ParsingXML\Parsing_XML_with_XPathExpression.csproj", "{6915B8F2-2158-4FFE-A0E2-C0C609D8CE14}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parsing_XML_with_AngleSharp", "Parsing XML\ParsingXMLwithHTMLAgilityPack\Parsing_XML_with_AngleSharp.csproj", "{D30F45B1-4ED9-431A-B715-DE5D9E6EF221}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Parsing HTML", "04 Parsing HTML", "{144B626E-364A-4B4D-8418-346DB532312A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Parsing HTML", "03 Parsing HTML", "{144B626E-364A-4B4D-8418-346DB532312A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parsing_HTML_with_AngleSharp", "Parsing HTML\Parsing_HTML_with_AngleSharp\Parsing_HTML_with_AngleSharp.csproj", "{65A287B1-89D8-4ED5-81B0-CF173A264FD6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Parsing JSON", "05 Parsing JSON", "{04240057-F022-4ED6-9C2E-7EAA3FA80B85}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Parsing JSON", "04 Parsing JSON", "{04240057-F022-4ED6-9C2E-7EAA3FA80B85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParsingJSON", "Parsing JSON\ParsingJSON\ParsingJSON.csproj", "{94CA8F79-1219-4D6B-B183-48F56E84B953}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParsingJSON", "Parsing JSON\ParsingJSON\ParsingJSON.csproj", "{94CA8F79-1219-4D6B-B183-48F56E84B953}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Serializing to XML", "06 Serializing to XML", "{120001DE-0C73-4D09-A321-6FDAEB421CFB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Serializing to XML", "05 Serializing to XML", "{120001DE-0C73-4D09-A321-6FDAEB421CFB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 Serializing to JSON", "07 Serializing to JSON", "{7CF60739-12E6-45FA-9F82-4D8090B7F8D9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Serializing to JSON", "06 Serializing to JSON", "{7CF60739-12E6-45FA-9F82-4D8090B7F8D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serializing_to_XML", "Serializing to XML\Serializing_to_XML\Serializing_to_XML.csproj", "{B87692D8-379D-439F-8FAF-9DA8630D7C53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serializing_to_XML", "Serializing to XML\Serializing_to_XML\Serializing_to_XML.csproj", "{B87692D8-379D-439F-8FAF-9DA8630D7C53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serializing_to_JSON", "Serializing to JSON\Serializing_to_JSON\Serializing_to_JSON.csproj", "{1B25C856-0DB9-4E39-B8C3-E4C59EDDD3A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serializing_to_JSON", "Serializing to JSON\Serializing_to_JSON\Serializing_to_JSON.csproj", "{1B25C856-0DB9-4E39-B8C3-E4C59EDDD3A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "14 State machine", "14 State machine", "{B1063BB9-6770-4C8B-93AE-869151F6A141}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "15 Strategy Pattern", "15 Strategy Pattern", "{F5EBA806-9BA8-46A4-83C9-ED102C4E2760}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "16 Factory pattern", "16 Factory pattern", "{124C32D7-1695-47F9-B5E0-AA20C6242BDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "17 Nullobject pattern", "17 Nullobject pattern", "{21096974-974F-4CF8-9952-1FC5D492F851}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 REST Client", "07 REST Client", "{B8474518-A430-41B4-9EB4-DC4D0C66613A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "33 File Copy program", "33 File Copy program", "{63B04816-849D-4F08-AC70-96A750BB2E29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
