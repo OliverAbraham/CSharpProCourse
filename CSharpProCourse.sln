@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.31911.260
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 Solution items", "00 Solution items", "{A33B0CBE-9D88-457E-B40D-F6D8ABDDC6F0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 README", "00 README", "{A33B0CBE-9D88-457E-B40D-F6D8ABDDC6F0}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
@@ -20,7 +20,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logging_with_NLog", "Loggin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Logging", "01 Logging", "{00A4BBC5-B56B-495F-B159-06832563615E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 WeatherDisplay using HTML download", "03 WeatherDisplay using HTML download", "{F26E6439-A1C0-4CF6-A015-506238D75605}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13 WeatherDisplay using HTML download", "13 WeatherDisplay using HTML download", "{F26E6439-A1C0-4CF6-A015-506238D75605}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "A Simple solution (commandline)", "A Simple solution (commandline)", "{FA47C197-4CC2-4021-ADD2-F2D1F6C07948}"
 EndProject
@@ -50,15 +50,37 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 PasswordGenerator", "02 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasswordGenerator", "PasswordGenerator\PasswordGenerator\PasswordGenerator.csproj", "{56EB4B45-C3B5-4A9C-A857-035E70D82E33}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 EmailClient_POP3_SMTP", "04 EmailClient_POP3_SMTP", "{FA972DE8-A6BB-4672-9907-25AFD16948B1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09 EmailClient_POP3_SMTP", "09 EmailClient_POP3_SMTP", "{FA972DE8-A6BB-4672-9907-25AFD16948B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pop3Client", "EmailClient_POP3_SMTP\Pop3Client\Pop3Client.csproj", "{4261923D-5BC0-43A8-9C07-C39C575B7800}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pop3Client", "EmailClient_POP3_SMTP\Pop3Client\Pop3Client.csproj", "{4261923D-5BC0-43A8-9C07-C39C575B7800}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmtpClient", "EmailClient_POP3_SMTP\SmtpClient\SmtpClient.csproj", "{B641CA12-FB5A-4BEB-880A-80E70193B105}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmtpClient", "EmailClient_POP3_SMTP\SmtpClient\SmtpClient.csproj", "{B641CA12-FB5A-4BEB-880A-80E70193B105}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Pushbullet client", "05 Pushbullet client", "{4838893E-E6F1-43E4-BF4E-15DCAD2278A2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10 Pushbullet client", "10 Pushbullet client", "{4838893E-E6F1-43E4-BF4E-15DCAD2278A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushbulletClient", "PushbulletClient\PushbulletClient\PushbulletClient.csproj", "{D47A9B2F-F5C8-4B74-95B0-4A5B84B7B0E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PushbulletClient", "PushbulletClient\PushbulletClient\PushbulletClient.csproj", "{D47A9B2F-F5C8-4B74-95B0-4A5B84B7B0E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08 Percentage display", "08 Percentage display", "{9E85C794-E0D5-408F-A710-A6163EADD6F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PercentageDisplay", "PercentageDisplay\PercentageDisplay\PercentageDisplay.csproj", "{13757099-7A2D-40FF-9DA3-03BEDD71EB4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Parsing XML", "03 Parsing XML", "{D762EA79-409D-44CD-9FED-50531658BFD5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parsing_XML_with_XPathExpression", "Parsing XML\ParsingXML\Parsing_XML_with_XPathExpression.csproj", "{6915B8F2-2158-4FFE-A0E2-C0C609D8CE14}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parsing_XML_with_AngleSharp", "Parsing XML\ParsingXMLwithHTMLAgilityPack\Parsing_XML_with_AngleSharp.csproj", "{D30F45B1-4ED9-431A-B715-DE5D9E6EF221}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Parsing HTML", "04 Parsing HTML", "{144B626E-364A-4B4D-8418-346DB532312A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parsing_HTML_with_AngleSharp", "Parsing HTML\Parsing_HTML_with_AngleSharp\Parsing_HTML_with_AngleSharp.csproj", "{65A287B1-89D8-4ED5-81B0-CF173A264FD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Parsing JSON", "05 Parsing JSON", "{04240057-F022-4ED6-9C2E-7EAA3FA80B85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParsingJSON", "Parsing JSON\ParsingJSON\ParsingJSON.csproj", "{94CA8F79-1219-4D6B-B183-48F56E84B953}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Serializing to XML", "06 Serializing to XML", "{120001DE-0C73-4D09-A321-6FDAEB421CFB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 Serializing to JSON", "07 Serializing to JSON", "{7CF60739-12E6-45FA-9F82-4D8090B7F8D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -122,6 +144,26 @@ Global
 		{D47A9B2F-F5C8-4B74-95B0-4A5B84B7B0E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D47A9B2F-F5C8-4B74-95B0-4A5B84B7B0E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D47A9B2F-F5C8-4B74-95B0-4A5B84B7B0E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13757099-7A2D-40FF-9DA3-03BEDD71EB4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13757099-7A2D-40FF-9DA3-03BEDD71EB4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13757099-7A2D-40FF-9DA3-03BEDD71EB4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13757099-7A2D-40FF-9DA3-03BEDD71EB4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6915B8F2-2158-4FFE-A0E2-C0C609D8CE14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6915B8F2-2158-4FFE-A0E2-C0C609D8CE14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6915B8F2-2158-4FFE-A0E2-C0C609D8CE14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6915B8F2-2158-4FFE-A0E2-C0C609D8CE14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D30F45B1-4ED9-431A-B715-DE5D9E6EF221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D30F45B1-4ED9-431A-B715-DE5D9E6EF221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D30F45B1-4ED9-431A-B715-DE5D9E6EF221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D30F45B1-4ED9-431A-B715-DE5D9E6EF221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A287B1-89D8-4ED5-81B0-CF173A264FD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A287B1-89D8-4ED5-81B0-CF173A264FD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A287B1-89D8-4ED5-81B0-CF173A264FD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A287B1-89D8-4ED5-81B0-CF173A264FD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94CA8F79-1219-4D6B-B183-48F56E84B953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94CA8F79-1219-4D6B-B183-48F56E84B953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94CA8F79-1219-4D6B-B183-48F56E84B953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94CA8F79-1219-4D6B-B183-48F56E84B953}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -146,6 +188,11 @@ Global
 		{4261923D-5BC0-43A8-9C07-C39C575B7800} = {FA972DE8-A6BB-4672-9907-25AFD16948B1}
 		{B641CA12-FB5A-4BEB-880A-80E70193B105} = {FA972DE8-A6BB-4672-9907-25AFD16948B1}
 		{D47A9B2F-F5C8-4B74-95B0-4A5B84B7B0E3} = {4838893E-E6F1-43E4-BF4E-15DCAD2278A2}
+		{13757099-7A2D-40FF-9DA3-03BEDD71EB4C} = {9E85C794-E0D5-408F-A710-A6163EADD6F3}
+		{6915B8F2-2158-4FFE-A0E2-C0C609D8CE14} = {D762EA79-409D-44CD-9FED-50531658BFD5}
+		{D30F45B1-4ED9-431A-B715-DE5D9E6EF221} = {D762EA79-409D-44CD-9FED-50531658BFD5}
+		{65A287B1-89D8-4ED5-81B0-CF173A264FD6} = {144B626E-364A-4B4D-8418-346DB532312A}
+		{94CA8F79-1219-4D6B-B183-48F56E84B953} = {04240057-F022-4ED6-9C2E-7EAA3FA80B85}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {498C29EF-0474-4C7D-A825-BB7F36FA1E99}

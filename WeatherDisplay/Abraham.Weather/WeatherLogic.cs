@@ -6,6 +6,17 @@ namespace Abraham.Weather
     {
         public string ExtractTemperatureFromPage(string page)
         {
+			// XPATH syntax: READ THIS!!!
+			// https://www.w3schools.com/xml/xpath_syntax.asp
+			//
+			// some details:
+			//    nodename 	Selects all nodes with the name "nodename"
+			//    / 	    Selects from the root node
+			//    // 	    Selects nodes in the document from the current node that match the selection no matter where they are
+			//    . 	    Selects the current node
+			//    .. 	    Selects the parent of the current node
+			//    @ 	    Selects attributes
+
             var Doc = new HtmlDocument();
             Doc.LoadHtml(page);
 
