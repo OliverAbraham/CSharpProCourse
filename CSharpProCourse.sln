@@ -98,7 +98,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 REST Client", "07 REST C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "33 File Copy program", "33 File Copy program", "{63B04816-849D-4F08-AC70-96A750BB2E29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REST_client", "REST client\REST_client\REST_client.csproj", "{6F3CB938-17BB-4A03-930D-F8E4F765D1E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "REST_client", "REST client\REST_client\REST_client.csproj", "{6F3CB938-17BB-4A03-930D-F8E4F765D1E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "34 Dining philosophers problem", "34 Dining philosophers problem", "{BA318CF8-6F1C-4D83-86B2-C6B03E2ED74E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiningPhilosophersProblem", "DiningPhilosophersProblem\DiningPhilosophersProblem\DiningPhilosophersProblem.csproj", "{9F5C8B34-81AE-40E1-B06A-73506F45737A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -194,6 +198,10 @@ Global
 		{6F3CB938-17BB-4A03-930D-F8E4F765D1E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F3CB938-17BB-4A03-930D-F8E4F765D1E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F3CB938-17BB-4A03-930D-F8E4F765D1E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F5C8B34-81AE-40E1-B06A-73506F45737A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F5C8B34-81AE-40E1-B06A-73506F45737A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F5C8B34-81AE-40E1-B06A-73506F45737A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F5C8B34-81AE-40E1-B06A-73506F45737A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -226,6 +234,7 @@ Global
 		{B87692D8-379D-439F-8FAF-9DA8630D7C53} = {120001DE-0C73-4D09-A321-6FDAEB421CFB}
 		{1B25C856-0DB9-4E39-B8C3-E4C59EDDD3A7} = {7CF60739-12E6-45FA-9F82-4D8090B7F8D9}
 		{6F3CB938-17BB-4A03-930D-F8E4F765D1E9} = {B8474518-A430-41B4-9EB4-DC4D0C66613A}
+		{9F5C8B34-81AE-40E1-B06A-73506F45737A} = {BA318CF8-6F1C-4D83-86B2-C6B03E2ED74E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {498C29EF-0474-4C7D-A825-BB7F36FA1E99}
