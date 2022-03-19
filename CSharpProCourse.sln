@@ -8,7 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 README", "00 README", "{
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "32 Calculator with unittests", "32 Calculator with unittests", "{55B7355E-1E96-4052-8E7E-29CDEEC0AD16}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "27 Calculator with unittests", "27 Calculator with unittests", "{55B7355E-1E96-4052-8E7E-29CDEEC0AD16}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12 Error handling concepts", "12 Error handling concepts", "{14E275FE-AA8C-4CEC-88D7-F445E5D36E9A}"
 EndProject
@@ -20,7 +20,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logging_with_NLog", "Loggin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Logging", "01 Logging", "{00A4BBC5-B56B-495F-B159-06832563615E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "31 WeatherDisplay using HTML download", "31 WeatherDisplay using HTML download", "{F26E6439-A1C0-4CF6-A015-506238D75605}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "26 WeatherDisplay using HTML download", "26 WeatherDisplay using HTML download", "{F26E6439-A1C0-4CF6-A015-506238D75605}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "A Simple solution (commandline)", "A Simple solution (commandline)", "{FA47C197-4CC2-4021-ADD2-F2D1F6C07948}"
 EndProject
@@ -46,7 +46,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "E Unittests for D", "E Unit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbrahamWeather_Tests", "WeatherDisplay\AbrahamWeather_Tests\AbrahamWeather_Tests.csproj", "{DE3370E2-81BE-417B-8109-AED265F84C72}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30 PasswordGenerator", "30 PasswordGenerator", "{36CE9E6E-9E9C-4CB2-B2D6-B57670FAC210}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "25 PasswordGenerator", "25 PasswordGenerator", "{36CE9E6E-9E9C-4CB2-B2D6-B57670FAC210}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasswordGenerator", "PasswordGenerator\PasswordGenerator\PasswordGenerator.csproj", "{56EB4B45-C3B5-4A9C-A857-035E70D82E33}"
 EndProject
@@ -96,29 +96,51 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "17 Nullobject pattern", "17
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 REST Client", "07 REST Client", "{B8474518-A430-41B4-9EB4-DC4D0C66613A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "33 File Copy program", "33 File Copy program", "{63B04816-849D-4F08-AC70-96A750BB2E29}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "28 File Copy program", "28 File Copy program", "{63B04816-849D-4F08-AC70-96A750BB2E29}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "REST_client", "REST client\REST_client\REST_client.csproj", "{6F3CB938-17BB-4A03-930D-F8E4F765D1E9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "34 Dining philosophers problem", "34 Dining philosophers problem", "{BA318CF8-6F1C-4D83-86B2-C6B03E2ED74E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "29 Dining philosophers problem", "29 Dining philosophers problem", "{BA318CF8-6F1C-4D83-86B2-C6B03E2ED74E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiningPhilosophersProblem", "DiningPhilosophersProblem\DiningPhilosophersProblem\DiningPhilosophersProblem.csproj", "{9F5C8B34-81AE-40E1-B06A-73506F45737A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiningPhilosophersProblem", "DiningPhilosophersProblem\DiningPhilosophersProblem\DiningPhilosophersProblem.csproj", "{9F5C8B34-81AE-40E1-B06A-73506F45737A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "18 Regular expressions", "18 Regular expressions", "{A0322B95-0B76-4359-A440-43DBEDA83755}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegularExpressions", "RegularExpressions\RegularExpressions.csproj", "{CA4397CB-1DAA-44E1-A2A4-742DFBBFBAB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegularExpressions", "RegularExpressions\RegularExpressions.csproj", "{CA4397CB-1DAA-44E1-A2A4-742DFBBFBAB7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "19 File locking", "19 File locking", "{682DC66B-B8AA-4001-A6A1-68F4FAA9FC11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileLocking", "FileLocking\FileLocking.csproj", "{53665B92-6068-42B1-903C-B3779FF7BBEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileLocking", "FileLocking\FileLocking.csproj", "{53665B92-6068-42B1-903C-B3779FF7BBEC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20 Hashing", "20 Hashing", "{C880450F-84A4-4BF4-8DD5-8A3DD8B034AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hashing", "Hashing\Hashing.csproj", "{61BDDA83-8112-447C-874F-A7614C5A2BA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hashing", "Hashing\Hashing.csproj", "{61BDDA83-8112-447C-874F-A7614C5A2BA7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "21 Command line parser", "21 Command line parser", "{2BBF76A8-D1A8-491D-9366-74351568168C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandLineParserDemo", "CommandLineParserDemo\CommandLineParserDemo.csproj", "{AF5E5BBE-751C-429A-B36B-19F162553915}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandLineParserDemo", "CommandLineParserDemo\CommandLineParserDemo.csproj", "{AF5E5BBE-751C-429A-B36B-19F162553915}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "22 Minesweeper cheet sheet", "22 Minesweeper cheet sheet", "{E191881A-E887-42DF-BDB0-3A04C1A096D9}"
+	ProjectSection(SolutionItems) = preProject
+		Minesweeper_cheatsheet\Minesweeper – Clean Code Developer School.pdf = Minesweeper_cheatsheet\Minesweeper – Clean Code Developer School.pdf
+		Minesweeper_cheatsheet\test_input_file_1.txt = Minesweeper_cheatsheet\test_input_file_1.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinesweeperLogic", "Minesweeper_cheatsheet\MinesweeperLogic\MinesweeperLogic.csproj", "{8D9E47A4-0744-4866-8D7A-044CDCD77991}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinesweeperSpickzettel", "Minesweeper_cheatsheet\MinesweeperSpickzettel\MinesweeperSpickzettel.csproj", "{67AA9897-0449-4C7A-98EA-1E6031CAAF20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "Minesweeper_cheatsheet\UnitTests\UnitTests.csproj", "{9A645D90-17B9-4F64-8C9C-22B145320FCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "23 PDF creation from scratch", "23 PDF creation from scratch", "{2E1A06DE-F31D-41F7-B77C-A31CD36A2BD2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDFCreation", "PDFCreation\PDFCreation\PDFCreation.csproj", "{6D06B84C-EE54-4372-BF22-FB0AA99DB00B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDFCreationWPF", "PDFCreation\PDFCreationWPF\PDFCreationWPF.csproj", "{C9F46396-EB28-4B6F-83DB-D4FD50F99CA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "24 XLSX file reading with ExcelDataReader", "24 XLSX file reading with ExcelDataReader", "{08886B57-FF45-4E12-B0C2-F85CA1413AC7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excel-XLSX-Library", "XLSX-Reading\Excel-XLSX-Library\Excel-XLSX-Library.csproj", "{6A4C65AE-7E2E-4736-B742-32DAC6604DF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -234,6 +256,30 @@ Global
 		{AF5E5BBE-751C-429A-B36B-19F162553915}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF5E5BBE-751C-429A-B36B-19F162553915}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF5E5BBE-751C-429A-B36B-19F162553915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D9E47A4-0744-4866-8D7A-044CDCD77991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D9E47A4-0744-4866-8D7A-044CDCD77991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D9E47A4-0744-4866-8D7A-044CDCD77991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D9E47A4-0744-4866-8D7A-044CDCD77991}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67AA9897-0449-4C7A-98EA-1E6031CAAF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67AA9897-0449-4C7A-98EA-1E6031CAAF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67AA9897-0449-4C7A-98EA-1E6031CAAF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67AA9897-0449-4C7A-98EA-1E6031CAAF20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A645D90-17B9-4F64-8C9C-22B145320FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A645D90-17B9-4F64-8C9C-22B145320FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A645D90-17B9-4F64-8C9C-22B145320FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A645D90-17B9-4F64-8C9C-22B145320FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D06B84C-EE54-4372-BF22-FB0AA99DB00B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D06B84C-EE54-4372-BF22-FB0AA99DB00B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D06B84C-EE54-4372-BF22-FB0AA99DB00B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D06B84C-EE54-4372-BF22-FB0AA99DB00B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9F46396-EB28-4B6F-83DB-D4FD50F99CA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9F46396-EB28-4B6F-83DB-D4FD50F99CA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9F46396-EB28-4B6F-83DB-D4FD50F99CA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9F46396-EB28-4B6F-83DB-D4FD50F99CA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A4C65AE-7E2E-4736-B742-32DAC6604DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A4C65AE-7E2E-4736-B742-32DAC6604DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A4C65AE-7E2E-4736-B742-32DAC6604DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A4C65AE-7E2E-4736-B742-32DAC6604DF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -271,6 +317,12 @@ Global
 		{53665B92-6068-42B1-903C-B3779FF7BBEC} = {682DC66B-B8AA-4001-A6A1-68F4FAA9FC11}
 		{61BDDA83-8112-447C-874F-A7614C5A2BA7} = {C880450F-84A4-4BF4-8DD5-8A3DD8B034AF}
 		{AF5E5BBE-751C-429A-B36B-19F162553915} = {2BBF76A8-D1A8-491D-9366-74351568168C}
+		{8D9E47A4-0744-4866-8D7A-044CDCD77991} = {E191881A-E887-42DF-BDB0-3A04C1A096D9}
+		{67AA9897-0449-4C7A-98EA-1E6031CAAF20} = {E191881A-E887-42DF-BDB0-3A04C1A096D9}
+		{9A645D90-17B9-4F64-8C9C-22B145320FCD} = {E191881A-E887-42DF-BDB0-3A04C1A096D9}
+		{6D06B84C-EE54-4372-BF22-FB0AA99DB00B} = {2E1A06DE-F31D-41F7-B77C-A31CD36A2BD2}
+		{C9F46396-EB28-4B6F-83DB-D4FD50F99CA6} = {2E1A06DE-F31D-41F7-B77C-A31CD36A2BD2}
+		{6A4C65AE-7E2E-4736-B742-32DAC6604DF4} = {08886B57-FF45-4E12-B0C2-F85CA1413AC7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {498C29EF-0474-4C7D-A825-BB7F36FA1E99}

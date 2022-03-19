@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFCreation", "PDFCreation\PDFCreation.csproj", "{426FDE3D-CB02-4216-8B54-E935B028CB00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFCreationWPF", "PDFCreationWPF\PDFCreationWPF.csproj", "{722514C5-F787-4565-8B89-236E0581EDAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{426FDE3D-CB02-4216-8B54-E935B028CB00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{426FDE3D-CB02-4216-8B54-E935B028CB00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{426FDE3D-CB02-4216-8B54-E935B028CB00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{426FDE3D-CB02-4216-8B54-E935B028CB00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{722514C5-F787-4565-8B89-236E0581EDAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{722514C5-F787-4565-8B89-236E0581EDAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{722514C5-F787-4565-8B89-236E0581EDAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{722514C5-F787-4565-8B89-236E0581EDAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {077987CF-A1EF-4AA2-AB61-D46962CDD132}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://oliverabraham.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PDFCreation\\PDFCreation.csproj
+		SccProjectName1 = PDFCreation
+		SccLocalPath1 = PDFCreation
+		SccProjectUniqueName2 = PDFCreationWPF\\PDFCreationWPF.csproj
+		SccProjectName2 = PDFCreationWPF
+		SccLocalPath2 = PDFCreationWPF
+	EndGlobalSection
+EndGlobal

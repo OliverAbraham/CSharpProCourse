@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinesweeperSpickzettel", "MinesweeperSpickzettel\MinesweeperSpickzettel.csproj", "{67AA9897-0449-4C7A-98EA-1E6031CAAF20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{500502C6-C5FF-4FBB-94DF-C3642A20160A}"
+	ProjectSection(SolutionItems) = preProject
+		Minesweeper – Clean Code Developer School.pdf = Minesweeper – Clean Code Developer School.pdf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test data", "Test data", "{B27E5B43-012C-4E46-B50A-13C141621291}"
+	ProjectSection(SolutionItems) = preProject
+		test_input_file_1.txt = test_input_file_1.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{9A645D90-17B9-4F64-8C9C-22B145320FCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinesweeperLogic", "MinesweeperLogic\MinesweeperLogic.csproj", "{8D9E47A4-0744-4866-8D7A-044CDCD77991}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67AA9897-0449-4C7A-98EA-1E6031CAAF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67AA9897-0449-4C7A-98EA-1E6031CAAF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67AA9897-0449-4C7A-98EA-1E6031CAAF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67AA9897-0449-4C7A-98EA-1E6031CAAF20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A645D90-17B9-4F64-8C9C-22B145320FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A645D90-17B9-4F64-8C9C-22B145320FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A645D90-17B9-4F64-8C9C-22B145320FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A645D90-17B9-4F64-8C9C-22B145320FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D9E47A4-0744-4866-8D7A-044CDCD77991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D9E47A4-0744-4866-8D7A-044CDCD77991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D9E47A4-0744-4866-8D7A-044CDCD77991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D9E47A4-0744-4866-8D7A-044CDCD77991}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {023834E3-D6DA-4ACE-9959-576DDED4298D}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://oliverabraham.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MinesweeperSpickzettel\\MinesweeperSpickzettel.csproj
+		SccProjectName1 = MinesweeperSpickzettel
+		SccLocalPath1 = MinesweeperSpickzettel
+		SccProjectUniqueName2 = UnitTests\\UnitTests.csproj
+		SccProjectName2 = UnitTests
+		SccLocalPath2 = UnitTests
+		SccProjectUniqueName3 = MinesweeperLogic\\MinesweeperLogic.csproj
+		SccProjectName3 = MinesweeperLogic
+		SccLocalPath3 = MinesweeperLogic
+	EndGlobalSection
+EndGlobal
