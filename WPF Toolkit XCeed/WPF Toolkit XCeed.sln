@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyGrid", "WPF Toolkit XCeed\PropertyGrid.csproj", "{61A13674-835E-491E-AF18-16B1A56C8E92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusyIndicator", "BusyIndicator\BusyIndicator.csproj", "{6D5B6B7D-D1EE-4EBF-B912-978F6AB2BD07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasserzeichenTextBox", "WasserzeichenTextBox\WasserzeichenTextBox.csproj", "{3BCB2084-FDD9-4930-86DA-03520B2FCE12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Color Picker", "Color Picker\Color Picker.csproj", "{4DC1BC37-076F-45D4-9AAE-637D4777E7C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RichTextBox", "RichTextBox\RichTextBox.csproj", "{2B2BA51D-9549-4B63-9B0F-B1F712B72F70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61A13674-835E-491E-AF18-16B1A56C8E92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61A13674-835E-491E-AF18-16B1A56C8E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61A13674-835E-491E-AF18-16B1A56C8E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61A13674-835E-491E-AF18-16B1A56C8E92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D5B6B7D-D1EE-4EBF-B912-978F6AB2BD07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D5B6B7D-D1EE-4EBF-B912-978F6AB2BD07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D5B6B7D-D1EE-4EBF-B912-978F6AB2BD07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D5B6B7D-D1EE-4EBF-B912-978F6AB2BD07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BCB2084-FDD9-4930-86DA-03520B2FCE12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BCB2084-FDD9-4930-86DA-03520B2FCE12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BCB2084-FDD9-4930-86DA-03520B2FCE12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BCB2084-FDD9-4930-86DA-03520B2FCE12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DC1BC37-076F-45D4-9AAE-637D4777E7C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DC1BC37-076F-45D4-9AAE-637D4777E7C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DC1BC37-076F-45D4-9AAE-637D4777E7C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DC1BC37-076F-45D4-9AAE-637D4777E7C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B2BA51D-9549-4B63-9B0F-B1F712B72F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B2BA51D-9549-4B63-9B0F-B1F712B72F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B2BA51D-9549-4B63-9B0F-B1F712B72F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B2BA51D-9549-4B63-9B0F-B1F712B72F70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64532F0A-BD61-4CDF-9337-1891DE0B85DA}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://oliverabraham.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BusyIndicator\\BusyIndicator.csproj
+		SccProjectName1 = BusyIndicator
+		SccLocalPath1 = BusyIndicator
+		SccProjectUniqueName2 = WasserzeichenTextBox\\WasserzeichenTextBox.csproj
+		SccProjectName2 = WasserzeichenTextBox
+		SccLocalPath2 = WasserzeichenTextBox
+		SccProjectUniqueName3 = Color\u0020Picker\\Color\u0020Picker.csproj
+		SccProjectName3 = Color\u0020Picker
+		SccLocalPath3 = Color\u0020Picker
+		SccProjectUniqueName4 = RichTextBox\\RichTextBox.csproj
+		SccProjectName4 = RichTextBox
+		SccLocalPath4 = RichTextBox
+		SccProjectUniqueName5 = WPF\u0020Toolkit\u0020XCeed\\PropertyGrid.csproj
+		SccProjectName5 = WPF\u0020Toolkit\u0020XCeed
+		SccLocalPath5 = WPF\u0020Toolkit\u0020XCeed
+	EndGlobalSection
+EndGlobal

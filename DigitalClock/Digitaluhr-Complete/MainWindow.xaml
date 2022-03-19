@@ -1,0 +1,18 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Digitaluhr_Complete"
+        xmlns:MyControls="clr-namespace:MyControls;assembly=MyControls" x:Class="Digitaluhr_Complete.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="348.4" Width="992.2">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <MyControls:SegmentDisplay Name="Hour10"   HorizontalAlignment="Left" Height="301" Margin="0,0,0,0" VerticalAlignment="Top" Width="225"/>
+            <MyControls:SegmentDisplay Name="Hour1"    HorizontalAlignment="Left" Height="301" Margin="0,0,50,0" VerticalAlignment="Top" Width="225"/>
+            <MyControls:SegmentDisplay Name="Minute10" HorizontalAlignment="Left" Height="301" Margin="0,0,0,0" VerticalAlignment="Top" Width="225"/>
+            <MyControls:SegmentDisplay Name="Minute1"  HorizontalAlignment="Left" Height="301" Margin="0,0,0,0" VerticalAlignment="Top" Width="225"/>
+        </StackPanel>
+    </Grid>
+</Window>

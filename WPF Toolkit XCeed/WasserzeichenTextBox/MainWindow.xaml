@@ -1,0 +1,29 @@
+﻿<Window x:Class="WasserzeichenTextBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WasserzeichenTextBox"
+         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="Wasserzeichen TextBox" Height="198.202" Width="348.989" Background="FloralWhite">
+    <Grid>
+
+        <xctk:WatermarkTextBox Margin="42,42,0,0" HorizontalAlignment="Left" Width="267" Height="27" VerticalAlignment="Top">
+            <xctk:WatermarkTextBox.Watermark>
+                <StackPanel Orientation="Horizontal" Height="25">
+                    <TextBlock Text="Vorname" Margin="4,0,0,0" Width="129" />
+                </StackPanel>
+            </xctk:WatermarkTextBox.Watermark>
+        </xctk:WatermarkTextBox>
+
+        <xctk:WatermarkTextBox Margin="42,86,0,0" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="267">
+            <xctk:WatermarkTextBox.Watermark>
+                <StackPanel Orientation="Horizontal" Height="25">
+                    <TextBlock Text="Nachname" Margin="4,0,0,0" Width="129" />
+                </StackPanel>
+            </xctk:WatermarkTextBox.Watermark>
+        </xctk:WatermarkTextBox>
+
+    </Grid>
+</Window>

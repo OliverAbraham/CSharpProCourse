@@ -1,0 +1,114 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp_05_DynamicDialog_WPF", "DemoApp_05_DynamicDialog\DemoApp_05_DynamicDialog_WPF.csproj", "{D5079BAF-1F3F-446A-9950-1C13BFFAEE2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicDialogWpfAdapter", "DynamicDialogWpfAdapter\DynamicDialogWpfAdapter.csproj", "{E69AB3EB-94BE-4401-9305-3A5D408BFC3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicDialogBase", "DynamicDialogBase\DynamicDialogBase.csproj", "{BF1E5A67-ED7E-4552-AD1E-92DD2CE6BA2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{913DE54F-94BF-460B-836C-31952BCC3DB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp_05_DynamicDialog_WinForms", "DemoApp_05_DynamicDialog_WinForms\DemoApp_05_DynamicDialog_WinForms.csproj", "{83D87CF8-20F3-4DF8-8298-AF5C61334A16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicDialogWinFormsAdapter", "DynamicDialogWinFormsAdapter\DynamicDialogWinFormsAdapter.csproj", "{DC8F0D7A-FDE6-43C4-AA6F-36B9AA0D5BA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 WPF UI", "2 WPF UI", "{599B83D4-690C-49A9-A046-9B020E2708BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 WinForms UI", "1 WinForms UI", "{7A3FEE8F-C932-4F79-BDEA-951F5E1012C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 UI Framework", "4 UI Framework", "{DEE3B637-029B-474F-8BAF-195B0475BD28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 Business Logic", "5 Business Logic", "{EB060C76-30AF-485A-8840-B0CB1EFB019D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 Asp.NET UI", "3 Asp.NET UI", "{D5EB908A-3CA8-486E-9C63-B8AFEF8703B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NET Web UI", "Asp.NET Web UI\Asp.NET Web UI.csproj", "{06F43D36-BEE8-413F-94A8-0A69FCC7EAA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5079BAF-1F3F-446A-9950-1C13BFFAEE2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5079BAF-1F3F-446A-9950-1C13BFFAEE2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5079BAF-1F3F-446A-9950-1C13BFFAEE2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5079BAF-1F3F-446A-9950-1C13BFFAEE2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E69AB3EB-94BE-4401-9305-3A5D408BFC3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69AB3EB-94BE-4401-9305-3A5D408BFC3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69AB3EB-94BE-4401-9305-3A5D408BFC3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69AB3EB-94BE-4401-9305-3A5D408BFC3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF1E5A67-ED7E-4552-AD1E-92DD2CE6BA2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF1E5A67-ED7E-4552-AD1E-92DD2CE6BA2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF1E5A67-ED7E-4552-AD1E-92DD2CE6BA2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF1E5A67-ED7E-4552-AD1E-92DD2CE6BA2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{913DE54F-94BF-460B-836C-31952BCC3DB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{913DE54F-94BF-460B-836C-31952BCC3DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{913DE54F-94BF-460B-836C-31952BCC3DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{913DE54F-94BF-460B-836C-31952BCC3DB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83D87CF8-20F3-4DF8-8298-AF5C61334A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83D87CF8-20F3-4DF8-8298-AF5C61334A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83D87CF8-20F3-4DF8-8298-AF5C61334A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83D87CF8-20F3-4DF8-8298-AF5C61334A16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC8F0D7A-FDE6-43C4-AA6F-36B9AA0D5BA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8F0D7A-FDE6-43C4-AA6F-36B9AA0D5BA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8F0D7A-FDE6-43C4-AA6F-36B9AA0D5BA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8F0D7A-FDE6-43C4-AA6F-36B9AA0D5BA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06F43D36-BEE8-413F-94A8-0A69FCC7EAA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06F43D36-BEE8-413F-94A8-0A69FCC7EAA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06F43D36-BEE8-413F-94A8-0A69FCC7EAA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06F43D36-BEE8-413F-94A8-0A69FCC7EAA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D5079BAF-1F3F-446A-9950-1C13BFFAEE2C} = {599B83D4-690C-49A9-A046-9B020E2708BD}
+		{E69AB3EB-94BE-4401-9305-3A5D408BFC3B} = {599B83D4-690C-49A9-A046-9B020E2708BD}
+		{BF1E5A67-ED7E-4552-AD1E-92DD2CE6BA2A} = {DEE3B637-029B-474F-8BAF-195B0475BD28}
+		{913DE54F-94BF-460B-836C-31952BCC3DB8} = {EB060C76-30AF-485A-8840-B0CB1EFB019D}
+		{83D87CF8-20F3-4DF8-8298-AF5C61334A16} = {7A3FEE8F-C932-4F79-BDEA-951F5E1012C0}
+		{DC8F0D7A-FDE6-43C4-AA6F-36B9AA0D5BA0} = {7A3FEE8F-C932-4F79-BDEA-951F5E1012C0}
+		{06F43D36-BEE8-413F-94A8-0A69FCC7EAA2} = {D5EB908A-3CA8-486E-9C63-B8AFEF8703B5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D3B2BD2-DCC2-4F8E-A334-91378A9F8803}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://oliverabraham.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BusinessLogic\\BusinessLogic.csproj
+		SccProjectTopLevelParentUniqueName1 = DemoApp_05_DynamicDialog.sln
+		SccProjectName1 = BusinessLogic
+		SccLocalPath1 = BusinessLogic
+		SccProjectUniqueName2 = DynamicDialogBase\\DynamicDialogBase.csproj
+		SccProjectTopLevelParentUniqueName2 = DemoApp_05_DynamicDialog.sln
+		SccProjectName2 = DynamicDialogBase
+		SccLocalPath2 = DynamicDialogBase
+		SccProjectUniqueName3 = DynamicDialogWpfAdapter\\DynamicDialogWpfAdapter.csproj
+		SccProjectTopLevelParentUniqueName3 = DemoApp_05_DynamicDialog.sln
+		SccProjectName3 = DynamicDialogWpfAdapter
+		SccLocalPath3 = DynamicDialogWpfAdapter
+		SccProjectUniqueName4 = DemoApp_05_DynamicDialog_WinForms\\DemoApp_05_DynamicDialog_WinForms.csproj
+		SccProjectTopLevelParentUniqueName4 = DemoApp_05_DynamicDialog.sln
+		SccProjectName4 = DemoApp_05_DynamicDialog_WinForms
+		SccLocalPath4 = DemoApp_05_DynamicDialog_WinForms
+		SccProjectUniqueName5 = DemoApp_05_DynamicDialog\\DemoApp_05_DynamicDialog_WPF.csproj
+		SccProjectTopLevelParentUniqueName5 = DemoApp_05_DynamicDialog.sln
+		SccProjectName5 = DemoApp_05_DynamicDialog
+		SccLocalPath5 = DemoApp_05_DynamicDialog
+		SccProjectUniqueName6 = DynamicDialogWinFormsAdapter\\DynamicDialogWinFormsAdapter.csproj
+		SccProjectTopLevelParentUniqueName6 = DemoApp_05_DynamicDialog.sln
+		SccProjectName6 = DynamicDialogWinFormsAdapter
+		SccLocalPath6 = DynamicDialogWinFormsAdapter
+		SccProjectUniqueName7 = Asp.NET\u0020Web\u0020UI\\Asp.NET\u0020Web\u0020UI.csproj
+		SccProjectTopLevelParentUniqueName7 = DemoApp_05_DynamicDialog.sln
+		SccProjectName7 = Asp.NET\u0020Web\u0020UI
+		SccLocalPath7 = Asp.NET\u0020Web\u0020UI
+	EndGlobalSection
+EndGlobal
