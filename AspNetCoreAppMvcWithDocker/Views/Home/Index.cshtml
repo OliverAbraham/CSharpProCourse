@@ -1,0 +1,33 @@
+﻿@model IEnumerable<AspNetCoreAppMvcWithDocker.Models.Artikel>
+
+@{
+    ViewData["Title"] = "Einkaufsliste";
+}
+
+<div class="text-center">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Bezeichnung)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model) 
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Bezeichnung)
+                    </td>
+                    <td>
+                        @*@Html.ActionLink("Ändern" , "Edit"   , new { ID = item.ID }) |
+                        @Html.ActionLink("Details", "Details", new { ID = item.ID }) |*@
+                        @Html.ActionLink("Löschen", "Delete" , new { ID = item.ID })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
