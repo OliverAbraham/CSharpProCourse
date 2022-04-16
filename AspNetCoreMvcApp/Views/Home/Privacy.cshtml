@@ -1,0 +1,14 @@
+﻿@model AspNetCoreMvcApp.Models.Einkaufszettel
+
+@{
+    ViewData["Title"] = "Artikel hinzufügen";
+}
+<h1>@ViewData["Title"]</h1>
+
+@{
+    Html.BeginForm("FuegeArtikelZurListeHinzu", "Home", FormMethod.Post); 
+    { 
+        @Html.TextBoxFor(m => m.NeuerArtikel)
+        <input type="submit" value="Auf die Liste" name="Home" /> 
+    }
+}
