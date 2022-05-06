@@ -1,0 +1,113 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libfintx", "src\libfintx\libfintx.csproj", "{ADBEF506-9C2A-48A7-87D2-1EEB9220AC74}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libfintx.Sample", "src\libfintx.Sample\libfintx.Sample.csproj", "{59D94860-DFA5-459B-BBD5-FD6640B24501}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libfintx.Sample.Ui", "src\libfintx.Sample.Ui\libfintx.Sample.Ui.csproj", "{8C0B1658-3195-44D3-AB86-48EF6B66DB81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libfintx.Tests", "src\libfintx.Tests\libfintx.Tests.csproj", "{F395045A-B25D-4810-9559-186D8518AF49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 Docs", "3 Docs", "{063C367E-EF5F-47DF-A25A-2C861D71710E}"
+	ProjectSection(SolutionItems) = preProject
+		docs\2019-02-07-EBICS-Sicherheitsempfehlungen.pdf = docs\2019-02-07-EBICS-Sicherheitsempfehlungen.pdf
+		docs\EBICS-Version_2.5_FinalDE-16-05-2011.pdf = docs\EBICS-Version_2.5_FinalDE-16-05-2011.pdf
+		docs\EBICS_Anhang1_ReturnCodes-final-16-05-2011.pdf = docs\EBICS_Anhang1_ReturnCodes-final-16-05-2011.pdf
+		docs\EBICS_Anhang2_Auftragsarten-FileFormatParameter-04-07-2019-mAE.pdf = docs\EBICS_Anhang2_Auftragsarten-FileFormatParameter-04-07-2019-mAE.pdf
+		docs\EBICS_Anhang2_Auftragsarten-FileFormatParameter-04-07-2019.pdf = docs\EBICS_Anhang2_Auftragsarten-FileFormatParameter-04-07-2019.pdf
+		docs\FinTS_3.0_Formals_2017-10-06_final_version.pdf = docs\FinTS_3.0_Formals_2017-10-06_final_version.pdf
+		docs\FinTS_3.0_Master_2018-11-29.pdf = docs\FinTS_3.0_Master_2018-11-29.pdf
+		docs\FinTS_3.0_Messages_Finanzdatenformate_2010-08-06_final_version.pdf = docs\FinTS_3.0_Messages_Finanzdatenformate_2010-08-06_final_version.pdf
+		docs\FinTS_3.0_Messages_Geschaeftsvorfaelle_2015-08-07_final_version.pdf = docs\FinTS_3.0_Messages_Geschaeftsvorfaelle_2015-08-07_final_version.pdf
+		docs\FinTS_3.0_Security_Alternative_Sicherheitsverfahren_Rel_20130122_final_version.pdf = docs\FinTS_3.0_Security_Alternative_Sicherheitsverfahren_Rel_20130122_final_version.pdf
+		docs\FinTS_3.0_Security_Sicherheitsverfahren_HBCI_Rel_20181129_final_version.pdf = docs\FinTS_3.0_Security_Sicherheitsverfahren_HBCI_Rel_20181129_final_version.pdf
+		docs\FinTS_3.0_Security_Sicherheitsverfahren_PINTAN_2018-02-23_final_version.pdf = docs\FinTS_3.0_Security_Sicherheitsverfahren_PINTAN_2018-02-23_final_version.pdf
+		docs\FinTS_4.0_Anlagen.pdf = docs\FinTS_4.0_Anlagen.pdf
+		docs\FinTS_4.0_Data-Dictionary.pdf = docs\FinTS_4.0_Data-Dictionary.pdf
+		docs\FinTS_4.0_Formals.pdf = docs\FinTS_4.0_Formals.pdf
+		docs\FinTS_4.0_Messages_Finanzdatenformate.pdf = docs\FinTS_4.0_Messages_Finanzdatenformate.pdf
+		docs\FinTS_4.0_Messages_Geschaeftsvorfaelle-IZV_Rel.2013-12-04 FV.pdf = docs\FinTS_4.0_Messages_Geschaeftsvorfaelle-IZV_Rel.2013-12-04 FV.pdf
+		docs\FinTS_4.0_Messages_Geschaeftsvorfaelle_Rel.2013-12-04 FV.pdf = docs\FinTS_4.0_Messages_Geschaeftsvorfaelle_Rel.2013-12-04 FV.pdf
+		docs\FinTS_4.0_Security_HBCI.pdf = docs\FinTS_4.0_Security_HBCI.pdf
+		docs\FinTS_4.0_Security_PINTAN.pdf = docs\FinTS_4.0_Security_PINTAN.pdf
+		docs\FinTS_4.0_XML-Syntax.pdf = docs\FinTS_4.0_XML-Syntax.pdf
+		docs\FinTS_4.1_Data-Dictionary_2017-10-06_final_version.pdf = docs\FinTS_4.1_Data-Dictionary_2017-10-06_final_version.pdf
+		docs\FinTS_4.1_Formals_2017-10-06__final_version.pdf = docs\FinTS_4.1_Formals_2017-10-06__final_version.pdf
+		docs\FinTS_4.1_Master_2017-10-06_final_version.pdf = docs\FinTS_4.1_Master_2017-10-06_final_version.pdf
+		docs\FinTS_4.1_Messages_Finanzdatenformate_2014-01-20-FV.pdf = docs\FinTS_4.1_Messages_Finanzdatenformate_2014-01-20-FV.pdf
+		docs\FinTS_4.1_Messages_Geschaeftsvorfaelle_Rel.2015_FV.pdf = docs\FinTS_4.1_Messages_Geschaeftsvorfaelle_Rel.2015_FV.pdf
+		docs\FinTS_4.1_Security_HBCI_2014-01-20-FV.pdf = docs\FinTS_4.1_Security_HBCI_2014-01-20-FV.pdf
+		docs\FinTS_4.1_Security_PINTAN_2017-10-06_final_version.pdf = docs\FinTS_4.1_Security_PINTAN_2017-10-06_final_version.pdf
+		docs\FinTS_4.1_XML-Syntax_2017-10-06_final_version.pdf = docs\FinTS_4.1_XML-Syntax_2017-10-06_final_version.pdf
+		docs\FinTS_Rueckmeldungscodes_2019-07-22_final_version.pdf = docs\FinTS_Rueckmeldungscodes_2019-07-22_final_version.pdf
+		docs\HBCI22 Final.pdf = docs\HBCI22 Final.pdf
+		docs\RDH-10.jpg = docs\RDH-10.jpg
+		docs\RDH-10_1.jpg = docs\RDH-10_1.jpg
+		docs\RDH-10_2.jpg = docs\RDH-10_2.jpg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Demo", "1 Demo", "{5A1862A4-4280-447C-86DB-1D43CD3895F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 FinTS Library", "2 FinTS Library", "{01FE731D-F6E8-4026-9576-44985C480413}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADBEF506-9C2A-48A7-87D2-1EEB9220AC74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADBEF506-9C2A-48A7-87D2-1EEB9220AC74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADBEF506-9C2A-48A7-87D2-1EEB9220AC74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADBEF506-9C2A-48A7-87D2-1EEB9220AC74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59D94860-DFA5-459B-BBD5-FD6640B24501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59D94860-DFA5-459B-BBD5-FD6640B24501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59D94860-DFA5-459B-BBD5-FD6640B24501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59D94860-DFA5-459B-BBD5-FD6640B24501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C0B1658-3195-44D3-AB86-48EF6B66DB81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C0B1658-3195-44D3-AB86-48EF6B66DB81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C0B1658-3195-44D3-AB86-48EF6B66DB81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C0B1658-3195-44D3-AB86-48EF6B66DB81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F395045A-B25D-4810-9559-186D8518AF49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F395045A-B25D-4810-9559-186D8518AF49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F395045A-B25D-4810-9559-186D8518AF49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F395045A-B25D-4810-9559-186D8518AF49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ADBEF506-9C2A-48A7-87D2-1EEB9220AC74} = {01FE731D-F6E8-4026-9576-44985C480413}
+		{59D94860-DFA5-459B-BBD5-FD6640B24501} = {5A1862A4-4280-447C-86DB-1D43CD3895F6}
+		{8C0B1658-3195-44D3-AB86-48EF6B66DB81} = {5A1862A4-4280-447C-86DB-1D43CD3895F6}
+		{F395045A-B25D-4810-9559-186D8518AF49} = {01FE731D-F6E8-4026-9576-44985C480413}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08038FEB-32E7-4136-9711-953F2999EC6C}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://oliverabraham.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = src\\libfintx.Sample.Ui\\libfintx.Sample.Ui.csproj
+		SccProjectTopLevelParentUniqueName1 = FinTS.sln
+		SccProjectName1 = src/libfintx.Sample.Ui
+		SccLocalPath1 = src\\libfintx.Sample.Ui
+		SccProjectUniqueName2 = src\\libfintx.Sample\\libfintx.Sample.csproj
+		SccProjectTopLevelParentUniqueName2 = FinTS.sln
+		SccProjectName2 = src/libfintx.Sample
+		SccLocalPath2 = src\\libfintx.Sample
+		SccProjectUniqueName3 = src\\libfintx.Tests\\libfintx.Tests.csproj
+		SccProjectTopLevelParentUniqueName3 = FinTS.sln
+		SccProjectName3 = src/libfintx.Tests
+		SccLocalPath3 = src\\libfintx.Tests
+		SccProjectUniqueName4 = src\\libfintx\\libfintx.csproj
+		SccProjectTopLevelParentUniqueName4 = FinTS.sln
+		SccProjectName4 = src/libfintx
+		SccLocalPath4 = src\\libfintx
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "libfintx.Sample": {
+      "commandName": "Project",
+      "commandLineArgs": "--bic 21352240 --userid 114813464 --accountnumber 114813464 --url https://banking-sh2.s-fints-pt-sh.de/fints30 --pin abc --operation Balance "
+    }
+  }
+}
