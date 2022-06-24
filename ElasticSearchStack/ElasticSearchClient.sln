@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElasticSearchClient_Core", "ElasticSearchClient\ElasticSearchClient_Core.csproj", "{1415CEF1-949B-4D1F-AAA8-89B2109F096E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElasticSearchClient_Fw_4_7_2", "ElasticSearchClient_Fw_4_7_2\ElasticSearchClient_Fw_4_7_2.csproj", "{92821140-B86A-4330-846A-F8CDE0698493}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLogClient", "NLogClient\NLogClient.csproj", "{B4CAAC72-61B7-4E9F-876A-3FBD068A1512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLogCustomTargetForLogstash", "NLogCustomTargetForLogstash\NLogCustomTargetForLogstash.csproj", "{4A2043CF-D541-4A5F-9E4D-4478BC6D4D48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1415CEF1-949B-4D1F-AAA8-89B2109F096E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1415CEF1-949B-4D1F-AAA8-89B2109F096E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1415CEF1-949B-4D1F-AAA8-89B2109F096E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1415CEF1-949B-4D1F-AAA8-89B2109F096E}.Debug|x64.Build.0 = Debug|Any CPU
+		{1415CEF1-949B-4D1F-AAA8-89B2109F096E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1415CEF1-949B-4D1F-AAA8-89B2109F096E}.Debug|x86.Build.0 = Debug|Any CPU
+		{1415CEF1-949B-4D1F-AAA8-89B2109F096E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1415CEF1-949B-4D1F-AAA8-89B2109F096E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1415CEF1-949B-4D1F-AAA8-89B2109F096E}.Release|x64.ActiveCfg = Release|Any CPU
+		{1415CEF1-949B-4D1F-AAA8-89B2109F096E}.Release|x64.Build.0 = Release|Any CPU
+		{1415CEF1-949B-4D1F-AAA8-89B2109F096E}.Release|x86.ActiveCfg = Release|Any CPU
+		{1415CEF1-949B-4D1F-AAA8-89B2109F096E}.Release|x86.Build.0 = Release|Any CPU
+		{92821140-B86A-4330-846A-F8CDE0698493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92821140-B86A-4330-846A-F8CDE0698493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92821140-B86A-4330-846A-F8CDE0698493}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{92821140-B86A-4330-846A-F8CDE0698493}.Debug|x64.Build.0 = Debug|Any CPU
+		{92821140-B86A-4330-846A-F8CDE0698493}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{92821140-B86A-4330-846A-F8CDE0698493}.Debug|x86.Build.0 = Debug|Any CPU
+		{92821140-B86A-4330-846A-F8CDE0698493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92821140-B86A-4330-846A-F8CDE0698493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92821140-B86A-4330-846A-F8CDE0698493}.Release|x64.ActiveCfg = Release|Any CPU
+		{92821140-B86A-4330-846A-F8CDE0698493}.Release|x64.Build.0 = Release|Any CPU
+		{92821140-B86A-4330-846A-F8CDE0698493}.Release|x86.ActiveCfg = Release|Any CPU
+		{92821140-B86A-4330-846A-F8CDE0698493}.Release|x86.Build.0 = Release|Any CPU
+		{B4CAAC72-61B7-4E9F-876A-3FBD068A1512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4CAAC72-61B7-4E9F-876A-3FBD068A1512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4CAAC72-61B7-4E9F-876A-3FBD068A1512}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B4CAAC72-61B7-4E9F-876A-3FBD068A1512}.Debug|x64.Build.0 = Debug|Any CPU
+		{B4CAAC72-61B7-4E9F-876A-3FBD068A1512}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B4CAAC72-61B7-4E9F-876A-3FBD068A1512}.Debug|x86.Build.0 = Debug|Any CPU
+		{B4CAAC72-61B7-4E9F-876A-3FBD068A1512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4CAAC72-61B7-4E9F-876A-3FBD068A1512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4CAAC72-61B7-4E9F-876A-3FBD068A1512}.Release|x64.ActiveCfg = Release|Any CPU
+		{B4CAAC72-61B7-4E9F-876A-3FBD068A1512}.Release|x64.Build.0 = Release|Any CPU
+		{B4CAAC72-61B7-4E9F-876A-3FBD068A1512}.Release|x86.ActiveCfg = Release|Any CPU
+		{B4CAAC72-61B7-4E9F-876A-3FBD068A1512}.Release|x86.Build.0 = Release|Any CPU
+		{4A2043CF-D541-4A5F-9E4D-4478BC6D4D48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A2043CF-D541-4A5F-9E4D-4478BC6D4D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A2043CF-D541-4A5F-9E4D-4478BC6D4D48}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4A2043CF-D541-4A5F-9E4D-4478BC6D4D48}.Debug|x64.Build.0 = Debug|Any CPU
+		{4A2043CF-D541-4A5F-9E4D-4478BC6D4D48}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4A2043CF-D541-4A5F-9E4D-4478BC6D4D48}.Debug|x86.Build.0 = Debug|Any CPU
+		{4A2043CF-D541-4A5F-9E4D-4478BC6D4D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A2043CF-D541-4A5F-9E4D-4478BC6D4D48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A2043CF-D541-4A5F-9E4D-4478BC6D4D48}.Release|x64.ActiveCfg = Release|Any CPU
+		{4A2043CF-D541-4A5F-9E4D-4478BC6D4D48}.Release|x64.Build.0 = Release|Any CPU
+		{4A2043CF-D541-4A5F-9E4D-4478BC6D4D48}.Release|x86.ActiveCfg = Release|Any CPU
+		{4A2043CF-D541-4A5F-9E4D-4478BC6D4D48}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8385B50A-B5B1-4372-B431-6D1C0BD21C1A}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://oliverabraham.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ElasticSearchClient\\ElasticSearchClient_Core.csproj
+		SccProjectName1 = ElasticSearchClient
+		SccLocalPath1 = ElasticSearchClient
+		SccProjectUniqueName2 = ElasticSearchClient_Fw_4_7_2\\ElasticSearchClient_Fw_4_7_2.csproj
+		SccProjectName2 = ElasticSearchClient_Fw_4_7_2
+		SccLocalPath2 = ElasticSearchClient_Fw_4_7_2
+		SccProjectUniqueName3 = NLogClient\\NLogClient.csproj
+		SccProjectName3 = NLogClient
+		SccLocalPath3 = NLogClient
+		SccProjectUniqueName4 = NLogCustomTargetForLogstash\\NLogCustomTargetForLogstash.csproj
+		SccProjectName4 = NLogCustomTargetForLogstash
+		SccLocalPath4 = NLogCustomTargetForLogstash
+	EndGlobalSection
+EndGlobal

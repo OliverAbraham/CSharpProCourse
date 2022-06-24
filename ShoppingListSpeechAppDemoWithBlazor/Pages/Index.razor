@@ -1,0 +1,105 @@
+﻿@using System.Net.Http
+@inject HttpClient Http
+@inject IJSRuntime js;
+
+@using Toolbelt.Blazor.SpeechRecognition @{/* Add these two lines. */}
+@inject SpeechRecognition SpeechRecognition
+@implements IDisposable
+
+@page "/"
+
+<h1><button @onclick="PlayAudioFile">PLAY MP3</button></h1>
+<h1><button @onclick="CheckTextToSpeechCapability">Check TTS</button></h1>
+<h1><button @onclick="Speak">Speak</button></h1>
+<h1><button @onclick="StartSpeechRecognition">Start Speech Recognition</button></h1>
+<h1><button @onclick="FetchDataFromWebsite">GET</button></h1>
+<p>@_result</p>
+
+
+<audio id="player">
+    <source id="playerSource" src="" />
+</audio>
+
+
+@functions
+{
+    public string _result { get; set; }
+
+    protected override void OnInitialized()
+    {
+        _result = "initialized";
+        StateHasChanged();
+    }
+
+    async Task StartSpeechRecognition()
+    {
+        this.SpeechRecognition.Lang = "en-US";
+        this.SpeechRecognition.InterimResults = true;
+        this.SpeechRecognition.Continuous = true;
+        this.SpeechRecognition.Result += OnSpeechRecognized;
+        this.SpeechRecognition.End += OnSpeechEnded;
+
+        await this.SpeechRecognition.StartAsync();
+        _result = "speech recognition started";
+        StateHasChanged();
+    }
+
+    async void OnSpeechRecognized(object sender, SpeechRecognitionEventArgs args)
+    {
+        _result = args.Results[0].Items[0].Transcript;
+        StateHasChanged();
+        await this.SpeechRecognition.StopAsync();
+        await js.InvokeVoidAsync("Speak", _result);
+    }
+
+    void OnSpeechEnded(object sender, EventArgs e)
+    {
+        _result = "ended!";
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        this.SpeechRecognition.Result -= OnSpeechRecognized;
+    }
+
+
+
+
+
+
+
+    public async Task PlayAudioFile()
+    {
+        await js.InvokeVoidAsync("PlayAudioFile", "/sounds/cat.mp3");
+    }
+
+    public async Task CheckTextToSpeechCapability()
+    {
+        await js.InvokeVoidAsync("CheckTextToSpeechCapability");
+    }
+
+    // Besser diese blazor-library verwenden:
+    // https://github.com/jsakamoto/Toolbelt.Blazor.SpeechSynthesis
+
+    public async Task Speak()
+    {
+        await js.InvokeVoidAsync("Speak", "Hallo ich bin Dein Smartphone");
+    }
+
+    public async void FetchDataFromWebsite()
+    {
+        try
+        {
+            var response = await Http.GetAsync("/");
+            _result = response.Content.ToString();
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            _result = "Fehler: " + ex.ToString();
+            StateHasChanged();
+        }
+    }
+}
+

@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipArchiveTest", "ZipArchiveTest\ZipArchiveTest.csproj", "{8E60054A-07F7-46E0-A9A6-2FB2B0F36E67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleUnzip", "SimpleUnzip\SimpleUnzip.csproj", "{1C9669C7-04A8-47AE-A588-6BDD7FA66F76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abraham.Compression", "Abraham.Compression\Abraham.Compression.csproj", "{629A319B-D1B3-480D-947A-088632B6D644}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E60054A-07F7-46E0-A9A6-2FB2B0F36E67}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{8E60054A-07F7-46E0-A9A6-2FB2B0F36E67}.Debug|x86.ActiveCfg = Debug|x86
+		{8E60054A-07F7-46E0-A9A6-2FB2B0F36E67}.Debug|x86.Build.0 = Debug|x86
+		{8E60054A-07F7-46E0-A9A6-2FB2B0F36E67}.Release|Any CPU.ActiveCfg = Release|x86
+		{8E60054A-07F7-46E0-A9A6-2FB2B0F36E67}.Release|x86.ActiveCfg = Release|x86
+		{8E60054A-07F7-46E0-A9A6-2FB2B0F36E67}.Release|x86.Build.0 = Release|x86
+		{1C9669C7-04A8-47AE-A588-6BDD7FA66F76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C9669C7-04A8-47AE-A588-6BDD7FA66F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C9669C7-04A8-47AE-A588-6BDD7FA66F76}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1C9669C7-04A8-47AE-A588-6BDD7FA66F76}.Debug|x86.Build.0 = Debug|Any CPU
+		{1C9669C7-04A8-47AE-A588-6BDD7FA66F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C9669C7-04A8-47AE-A588-6BDD7FA66F76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C9669C7-04A8-47AE-A588-6BDD7FA66F76}.Release|x86.ActiveCfg = Release|Any CPU
+		{1C9669C7-04A8-47AE-A588-6BDD7FA66F76}.Release|x86.Build.0 = Release|Any CPU
+		{629A319B-D1B3-480D-947A-088632B6D644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{629A319B-D1B3-480D-947A-088632B6D644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{629A319B-D1B3-480D-947A-088632B6D644}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{629A319B-D1B3-480D-947A-088632B6D644}.Debug|x86.Build.0 = Debug|Any CPU
+		{629A319B-D1B3-480D-947A-088632B6D644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{629A319B-D1B3-480D-947A-088632B6D644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{629A319B-D1B3-480D-947A-088632B6D644}.Release|x86.ActiveCfg = Release|Any CPU
+		{629A319B-D1B3-480D-947A-088632B6D644}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {324B5411-C6EF-442A-882C-F668EBEC8F9A}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://oliverabraham.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Abraham.Compression\\Abraham.Compression.csproj
+		SccProjectName1 = Abraham.Compression
+		SccLocalPath1 = Abraham.Compression
+		SccProjectUniqueName2 = SimpleUnzip\\SimpleUnzip.csproj
+		SccProjectName2 = SimpleUnzip
+		SccLocalPath2 = SimpleUnzip
+		SccProjectUniqueName3 = ZipArchiveTest\\ZipArchiveTest.csproj
+		SccProjectName3 = ZipArchiveTest
+		SccLocalPath3 = ZipArchiveTest
+	EndGlobalSection
+EndGlobal

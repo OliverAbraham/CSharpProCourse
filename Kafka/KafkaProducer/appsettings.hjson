@@ -1,0 +1,7 @@
+﻿{
+	BootstrapServers  : "192.168.0.4:9092",
+    TransactionTimeout: 10,
+	MessageTimeout    : 300,
+	RequestTimeout    : 10,
+    Topic             : "quickstart-events"
+}

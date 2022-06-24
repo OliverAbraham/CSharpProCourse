@@ -1,0 +1,24 @@
+﻿<Window x:Class="Darlehensrechner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Darlehensrechner"
+        mc:Ignorable="d"
+        Title="Darlehensrechner" Height="450" Width="425.615">
+    <Grid>
+        <Label Content="Laufzeit von" HorizontalAlignment="Left" Margin="38,21,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="151,25,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="85"/>
+        <Label Content="bis" HorizontalAlignment="Left" Margin="252,21,0,0" VerticalAlignment="Top" Width="35"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="292,25,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="85"/>
+        <Label Content="Darlehenssumme" HorizontalAlignment="Left" Margin="38,49,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="151,53,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="85"/>
+        <Label Content="Zins in %" HorizontalAlignment="Left" Margin="38,78,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="151,82,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="85"/>
+        <Label Content="Tilgung in %" HorizontalAlignment="Left" Margin="38,106,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="151,110,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="85"/>
+        <Button Content="Berechnen" HorizontalAlignment="Left" Margin="292,90,0,0" VerticalAlignment="Top" Width="85"/>
+        <Label Content="Zins- und Tilgungsplan" HorizontalAlignment="Left" Margin="38,138,0,0" VerticalAlignment="Top" Width="156"/>
+        <DataGrid Margin="40,164,41,19"/>
+    </Grid>
+</Window>

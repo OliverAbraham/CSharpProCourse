@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer", "Consumer\Consumer.csproj", "{8BE34C51-E579-47B9-A026-7F928E17D337}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginBaseLibrary", "PluginBaseLibrary\PluginBaseLibrary.csproj", "{B0E8DFA8-1C54-4639-B00E-E20C64DBAE34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstPlugin", "MyFirstPlugin\MyFirstPlugin.csproj", "{EC008EE7-E01A-47D3-9CB9-124A6F5D3620}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BE34C51-E579-47B9-A026-7F928E17D337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BE34C51-E579-47B9-A026-7F928E17D337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BE34C51-E579-47B9-A026-7F928E17D337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BE34C51-E579-47B9-A026-7F928E17D337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0E8DFA8-1C54-4639-B00E-E20C64DBAE34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0E8DFA8-1C54-4639-B00E-E20C64DBAE34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0E8DFA8-1C54-4639-B00E-E20C64DBAE34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0E8DFA8-1C54-4639-B00E-E20C64DBAE34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC008EE7-E01A-47D3-9CB9-124A6F5D3620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC008EE7-E01A-47D3-9CB9-124A6F5D3620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC008EE7-E01A-47D3-9CB9-124A6F5D3620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC008EE7-E01A-47D3-9CB9-124A6F5D3620}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5FE6638-753A-4CEB-96B0-CAC4E833344D}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://oliverabraham.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Consumer\\Consumer.csproj
+		SccProjectName1 = Consumer
+		SccLocalPath1 = Consumer
+		SccProjectUniqueName2 = MyFirstPlugin\\MyFirstPlugin.csproj
+		SccProjectName2 = MyFirstPlugin
+		SccLocalPath2 = MyFirstPlugin
+		SccProjectUniqueName3 = PluginBaseLibrary\\PluginBaseLibrary.csproj
+		SccProjectName3 = PluginBaseLibrary
+		SccLocalPath3 = PluginBaseLibrary
+	EndGlobalSection
+EndGlobal

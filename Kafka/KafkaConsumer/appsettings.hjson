@@ -1,0 +1,5 @@
+﻿{
+	BootstrapServers  : "192.168.0.4:9092",
+    GroupId           : "foo",
+    Topic             : "quickstart-events"
+}

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>BlazorAppProgressive</title>
+    <base href="/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="manifest.json" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+</head>
+
+<body>
+    <app>Loading...</app>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+
+    <script>
+        function PlayAudioFile(src) {
+            var audio = document.getElementById('player');
+            if (audio != null) {
+                var audioSource = document.getElementById('playerSource');
+                if (audioSource != null) {
+                    audioSource.src = src;
+                    audio.load();
+                    audio.play();
+                }
+            }
+        }
+
+        function CheckTextToSpeechCapability() {
+            if ('speechSynthesis' in window) {
+                alert("Broswer supports speech synthesis 🎉");
+            } else {
+                alert("Sorry, your browser doesn't support the speech synthesis API !");
+            }
+        }
+
+        function Speak(sentence) {
+            var msg = new SpeechSynthesisUtterance();
+            msg.text = sentence;
+            window.speechSynthesis.speak(msg);
+        }
+
+        function Speak2(sentence) {
+            var msg = new SpeechSynthesisUtterance();
+            var voices = window.speechSynthesis.getVoices();
+            msg.voice = voices[10];
+            msg.volume = 1; // From 0 to 1
+            msg.rate = 1; // From 0.1 to 10
+            msg.pitch = 2; // From 0 to 2
+            msg.text = sentence;
+            msg.lang = 'de';
+            speechSynthesis.speak(msg);
+        }
+
+        function GetVoices() {
+            speechSynthesis.getVoices().forEach(function (voice) {
+                console.log(voice.name, voice.default ? voice.default : '');
+            });
+        }
+    </script>
+
+
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+</body>
+
+</html>

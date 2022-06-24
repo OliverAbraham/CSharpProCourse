@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaProducer", "KafkaProducer\KafkaProducer.csproj", "{DB179FB9-1F42-4DB9-851F-3775A6D59D20}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaConsumer", "KafkaConsumer\KafkaConsumer.csproj", "{DD86B6E7-89B4-437C-B33B-B5A7C2CCA448}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abraham.ProgramSettings.Std20", "..\..\Hausnet\Libs\Abraham.ProgramSettings.Std20\Abraham.ProgramSettings.Std20.csproj", "{F45963ED-FEEB-4125-80E0-C7BB89D4FF2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Producer", "1 Producer", "{991AE480-08CD-401E-97E2-E01B5E538F50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Consumer", "2 Consumer", "{1CFF8A3D-CFF8-4ECD-BE40-7B553D03042F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 Libs", "3 Libs", "{676D3C31-9C00-44EF-B47A-9F37CBA48953}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB179FB9-1F42-4DB9-851F-3775A6D59D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB179FB9-1F42-4DB9-851F-3775A6D59D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB179FB9-1F42-4DB9-851F-3775A6D59D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB179FB9-1F42-4DB9-851F-3775A6D59D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD86B6E7-89B4-437C-B33B-B5A7C2CCA448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD86B6E7-89B4-437C-B33B-B5A7C2CCA448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD86B6E7-89B4-437C-B33B-B5A7C2CCA448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD86B6E7-89B4-437C-B33B-B5A7C2CCA448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F45963ED-FEEB-4125-80E0-C7BB89D4FF2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F45963ED-FEEB-4125-80E0-C7BB89D4FF2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F45963ED-FEEB-4125-80E0-C7BB89D4FF2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F45963ED-FEEB-4125-80E0-C7BB89D4FF2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB179FB9-1F42-4DB9-851F-3775A6D59D20} = {991AE480-08CD-401E-97E2-E01B5E538F50}
+		{DD86B6E7-89B4-437C-B33B-B5A7C2CCA448} = {1CFF8A3D-CFF8-4ECD-BE40-7B553D03042F}
+		{F45963ED-FEEB-4125-80E0-C7BB89D4FF2B} = {676D3C31-9C00-44EF-B47A-9F37CBA48953}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD2C25F6-6563-4AA3-9C9C-2B55CD14A811}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://oliverabraham.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = KafkaConsumer\\KafkaConsumer.csproj
+		SccProjectTopLevelParentUniqueName1 = Kafka.sln
+		SccProjectName1 = KafkaConsumer
+		SccLocalPath1 = KafkaConsumer
+		SccProjectUniqueName2 = KafkaProducer\\KafkaProducer.csproj
+		SccProjectTopLevelParentUniqueName2 = Kafka.sln
+		SccProjectName2 = KafkaProducer
+		SccLocalPath2 = KafkaProducer
+		SccProjectUniqueName3 = ..\\..\\Hausnet\\Libs\\Abraham.ProgramSettings.Std20\\Abraham.ProgramSettings.Std20.csproj
+		SccProjectTopLevelParentUniqueName3 = Kafka.sln
+		SccProjectName3 = ../../Hausnet/Libs/Abraham.ProgramSettings.Std20
+		SccLocalPath3 = ..\\..\\Hausnet\\Libs\\Abraham.ProgramSettings.Std20
+	EndGlobalSection
+EndGlobal

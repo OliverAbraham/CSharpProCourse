@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PluginBaseLibrary\PluginBaseLibrary.csproj" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="echo ------------------------------------------------------------------------------&#xD;&#xA;echo Kopiere die Assembly ins Ausgabeverzeichnis des Consumers&#xD;&#xA;xcopy &quot;$(TargetPath)&quot;      &quot;..\Consumer\bin\debug\netcoreapp2.2&quot; /Y&#xD;&#xA;echo ------------------------------------------------------------------------------&#xD;&#xA;" />
+  </Target>
+
+</Project>
