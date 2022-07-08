@@ -1,0 +1,61 @@
+
+Skill 
+----------------------
+	Name: AbrahamHomeAutomation
+	ID	: amzn1.ask.skill.7096f089-7e3d-402c-80fc-c170b9709422
+
+
+
+API Gateway
+----------------------
+	URL				: https://hdbtd5z9jk.execute-api.eu-west-1.amazonaws.com/MainStage
+	Scope			: scope
+	Client Secret	: Abraham2019!
+
+
+
+Lambda Functions
+----------------------
+1.Lambda-Funktion, die die Authorisierung macht: 
+	Name: AbrahamHomeAutomationAuthLambda
+	ID	: arn:aws:lambda:eu-west-1:358331695088:function:AbrahamHomeAutomationAuthLambda
+	RZ	: EU west / Irland
+
+2.Lambda-Funktion, die die Arbeit macht: 
+	Name: AlexaHomeAutomationSkill
+	ID	: arn:aws:lambda:eu-west-1:358331695088:function:HomeAutomationSkill
+	RZ	: EU west / Irland
+
+
+
+Warteschlange für die Kommunikation von Alexa mit dem Haus (Lambda zum Haus)
+-------------------------------------------------------------------------------------
+	URL: https://sqs.eu-west-1.amazonaws.com/358331695088/AbrahamAlexaQueue
+	ARN: arn:aws:sqs:eu-west-1:358331695088:AbrahamAlexaQueue
+
+Warteschlange2 für die Übermittlung der DAtenpobjekte vom Haus zur Lambda-Funktion
+-------------------------------------------------------------------------------------
+	URL: https://sqs.eu-west-1.amazonaws.com/358331695088/AbrahamAlexaQueueToLambda
+	ARN: arn:aws:sqs:eu-west-1:358331695088:AbrahamAlexaQueueToLambda
+
+
+User für die Warteschlange
+------------------------------------------------------
+	Name				: AbrahamAlexaQueueUser
+	Access key			: AKIAJ67TKDVOTRFSINQQ 
+	Secret access key	: duR/suecu+enjpZg3e2Al7zg7CLVrNTrplYyAhmr
+
+
+
+Anleitungsvideo : https://www.youtube.com/watch?v=ajzGjIXPg54
+Sample Repo		: https://github.com/DamianMehers/AlexaSmartHomeDemo
+
+
+
+DynamoDB Datenbank für die Übergabe der Datenobjekte vom Haus zur Lambda Function
+------------------------------------------------------------------------------------
+
+Table name		: HomeAutomationObjects
+Primary key		: ID (String)
+ARN				: arn:aws:dynamodb:eu-west-1:358331695088:table/HomeAutomationObjects
+!!!!!!!!!!!!NICHT BENUTZT !!!!!!

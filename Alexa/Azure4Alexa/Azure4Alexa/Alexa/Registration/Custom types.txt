@@ -1,0 +1,11 @@
+SWITCH_POSITIONS
+an
+aus
+
+DEVICE_NAMES
+Flur
+Windfang
+Haustür
+Vorgarten
+Arbeitszimmer
+Terrasse

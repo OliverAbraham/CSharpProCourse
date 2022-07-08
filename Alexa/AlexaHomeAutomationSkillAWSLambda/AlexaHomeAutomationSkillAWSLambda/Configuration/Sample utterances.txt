@@ -1,0 +1,19 @@
+GetNewFactIntent was es neues gibt
+GetNewFactIntent erzähl mir was Neues
+GetNewFactIntent was gibts Neues in Lentföhrden
+GetNewFactIntent was gibt es an Neuigkeiten in Lentföhrden
+GetNewFactIntent sie soll mir Neues erzählen
+GetNewFactIntent sie soll mir Neues sagen
+GetNewFactIntent sag mir was Neues
+GetNewFactIntent sag mir Neues
+GetNewFactIntent ich will Neuigkeiten
+GetFactIntent was noch
+GetFactIntent und sonst
+GetFactIntent erzähl mir was
+GetFactIntent sag mir was
+GetDatesIntent nach Terminen
+GetDatesIntent sag mir nächste Termine
+GetDatesIntent nächste Termine
+AMAZON.StopIntent danke
+AMAZON.StopIntent ende
+AMAZON.StopIntent tschüss

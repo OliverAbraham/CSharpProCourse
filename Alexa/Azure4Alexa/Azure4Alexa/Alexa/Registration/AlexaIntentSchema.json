@@ -1,0 +1,44 @@
+﻿{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "OnOff",
+          "type": "SWITCH_POSITIONS"
+        }
+      ],
+      "intent": "Wohnzimmer"
+    },
+    {
+      "slots": [
+        {
+          "name": "OnOff",
+          "type": "SWITCH_POSITIONS"
+        }
+      ],
+      "intent": "Esstisch"
+    },
+    {
+      "slots": [
+        {
+          "name": "OnOff",
+          "type": "SWITCH_POSITIONS"
+        }
+      ],
+      "intent": "Deckenfluter"
+    },
+    {
+      "slots": [
+        {
+          "name": "Device",
+          "type": "DEVICE_NAMES"
+        },
+        {
+          "name": "OnOff",
+          "type": "SWITCH_POSITIONS"
+        }
+      ],
+      "intent": "schalte"
+    }
+  ]
+}

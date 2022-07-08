@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlexaHomeAutomationSkill", "AlexaHomeAutomationSkill\AlexaHomeAutomationSkill.csproj", "{F6466733-B90E-4DCA-AF39-5F808E65B56C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlexaHomeAutomationSkill.Tests", "AlexaHomeAutomationSkill.Tests\AlexaHomeAutomationSkill.Tests.csproj", "{3BAE8032-659B-4421-9B1D-313474450B1A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlexaHomeAutomationAuthLambda", "AlexaHomeAutomationAuthLambda\AlexaHomeAutomationAuthLambda.csproj", "{2C0C8CE3-6161-4F39-A4F9-23FEDEB380E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6D969880-1C1E-465A-99B6-2EC6A6460BEF}"
+	ProjectSection(SolutionItems) = preProject
+		Notizen.txt = Notizen.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsConsoleQueueTestApp", "AwsConsoleQueueTestApp\AwsConsoleQueueTestApp.csproj", "{D05AED41-3EEA-4F40-903C-C3A38404149A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6466733-B90E-4DCA-AF39-5F808E65B56C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6466733-B90E-4DCA-AF39-5F808E65B56C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6466733-B90E-4DCA-AF39-5F808E65B56C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6466733-B90E-4DCA-AF39-5F808E65B56C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BAE8032-659B-4421-9B1D-313474450B1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BAE8032-659B-4421-9B1D-313474450B1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BAE8032-659B-4421-9B1D-313474450B1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BAE8032-659B-4421-9B1D-313474450B1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0C8CE3-6161-4F39-A4F9-23FEDEB380E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0C8CE3-6161-4F39-A4F9-23FEDEB380E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0C8CE3-6161-4F39-A4F9-23FEDEB380E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0C8CE3-6161-4F39-A4F9-23FEDEB380E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D05AED41-3EEA-4F40-903C-C3A38404149A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D05AED41-3EEA-4F40-903C-C3A38404149A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D05AED41-3EEA-4F40-903C-C3A38404149A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D05AED41-3EEA-4F40-903C-C3A38404149A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {387F4F48-0977-4BCB-A573-CA3304CD620A}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://oliverabraham.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AlexaHomeAutomationAuthLambda\\AlexaHomeAutomationAuthLambda.csproj
+		SccProjectName1 = AlexaHomeAutomationAuthLambda
+		SccLocalPath1 = AlexaHomeAutomationAuthLambda
+		SccProjectUniqueName2 = AlexaHomeAutomationSkill.Tests\\AlexaHomeAutomationSkill.Tests.csproj
+		SccProjectName2 = AlexaHomeAutomationSkill.Tests
+		SccLocalPath2 = AlexaHomeAutomationSkill.Tests
+		SccProjectUniqueName3 = AlexaHomeAutomationSkill\\AlexaHomeAutomationSkill.csproj
+		SccProjectName3 = AlexaHomeAutomationSkill
+		SccLocalPath3 = AlexaHomeAutomationSkill
+		SccProjectUniqueName4 = AwsConsoleQueueTestApp\\AwsConsoleQueueTestApp.csproj
+		SccProjectName4 = AwsConsoleQueueTestApp
+		SccLocalPath4 = AwsConsoleQueueTestApp
+	EndGlobalSection
+EndGlobal

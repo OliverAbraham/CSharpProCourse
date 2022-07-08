@@ -1,0 +1,4 @@
+﻿Wohnzimmer {OnOff}
+Esstisch {OnOff}
+Deckenfluter {OnOff}
+schalte {Device} {OnOff}
