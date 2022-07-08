@@ -1,0 +1,39 @@
+﻿<Window x:Class="Wetteranzeige.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Das Wetter" Height="250" Width="350" Background="AliceBlue">
+    <Grid>
+        <Label Content="" Name="Ortsname" Margin="30,10,27,0" VerticalAlignment="Top"
+               HorizontalContentAlignment="Center"/>
+
+        <Label Content="" Name="Temperatur" Margin="30,36,27,0" 
+               VerticalAlignment="Top" Height="61" FontSize="36" FontWeight="Bold"
+               HorizontalContentAlignment="Center"/>
+
+        <Grid Margin="50,80,0,0" Width="250" Height="120" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="60"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" HorizontalContentAlignment="Center" Content="morgens"/>
+            <Label Grid.Row="0" Grid.Column="1" HorizontalContentAlignment="Center" Content="mittags"/>
+            <Label Grid.Row="0" Grid.Column="2" HorizontalContentAlignment="Center" Content="abends"/>
+            <Label Grid.Row="0" Grid.Column="3" HorizontalContentAlignment="Center" Content="nachts"/>
+            <Label Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Center" Content="" Name="col1" FontSize="30"/>
+            <Label Grid.Row="1" Grid.Column="1" HorizontalContentAlignment="Center" Content="" Name="col2" FontSize="30"/>
+            <Label Grid.Row="1" Grid.Column="2" HorizontalContentAlignment="Center" Content="" Name="col3" FontSize="30"/>
+            <Label Grid.Row="1" Grid.Column="3" HorizontalContentAlignment="Center" Content="" Name="col4" FontSize="30"/>
+            <Label Grid.Row="2" Grid.Column="0" HorizontalContentAlignment="Center" Content="" Name="temp1" />
+            <Label Grid.Row="2" Grid.Column="1" HorizontalContentAlignment="Center" Content="" Name="temp2" />
+            <Label Grid.Row="2" Grid.Column="2" HorizontalContentAlignment="Center" Content="" Name="temp3" />
+            <Label Grid.Row="2" Grid.Column="3" HorizontalContentAlignment="Center" Content="" Name="temp4" />
+        </Grid>
+    </Grid>
+</Window>
