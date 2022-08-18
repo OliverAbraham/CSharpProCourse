@@ -2,44 +2,50 @@
 
 namespace BewerberAufgabenUndFragen
 {
-class WhatAreTheProblemHere
-{
-	private void Question1()
+	class WhatAreTheProblemHere
 	{
-		try
+		private void Question1()
 		{
-			DoSomething();
+			try
+			{
+				DoSomething();
+			}
+			catch (Exception e)
+			{
+				throw new Exception(e.ToString());
+			}
 		}
-		catch (Exception e)
-		{
-			throw new Exception(e);
-		}
-	}
 
-	private void Question2()
-	{
-		try
+		private void Question2()
 		{
-			DoSomething();
+			try
+			{
+				DoSomething();
+			}
+			catch (Exception)
+			{
+				throw;
+			}
+			catch
+			{
+				throw;
+			}
 		}
-		catch (Exception)
-		{
-			throw;
-		}
-		catch
-		{
-			throw;
-		}
-	}
 
-	private void Question3()
-	{
-		try
+		private void Question3()
 		{
-			DoSomething();
+			try
+			{
+				DoSomething();
+			}
+			catch (Exception)
+			{
+			}
 		}
-		catch (Exception)
-		{
-		}
-	}
+
+        private void DoSomething()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

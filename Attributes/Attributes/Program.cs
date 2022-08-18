@@ -1,26 +1,39 @@
-﻿namespace Attributes
+﻿using System.Reflection;
+
+namespace Attributes
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Zugriff auf Attribute mit Reflektion");
+            Console.WriteLine("Zugriff auf Attribute mit Reflektion\n\n");
 
-            var attributes = Attribute.GetCustomAttributes(typeof(SomeClass));  // Reflection.  
-            Console.WriteLine($"Attributes of SomeClass:");  
-            foreach (Attribute attr in attributes)
-                Console.WriteLine(attr);
 
-            //var instance = new SomeClass();
-            //attributes = Attribute.GetCustomAttributes(instance.Amount);  // Reflection.  
-            //foreach (Attribute attr in attributes)  
-            //{  
-            //    if (attr is MyName)  
-            //    {  
-            //        Author a = (Author)attr;  
-            //        System.Console.WriteLine("   {0}, version {1:f}", a.GetName(), a.version);  
-            //    }  
-            //}  
+            Console.Write($"Here are the attributes of 'SomeClass': ");  
+            var classAttributes = Attribute.GetCustomAttributes(typeof(SomeClass));  // Reflection.  
+            foreach (var attribute in classAttributes)
+                Console.WriteLine(attribute);
+
+
+            var instance = new SomeClass();
+            Console.WriteLine($"\n\nNow running over the Properties of '{instance.GetType().Name}'");
+            var t = instance.GetType();
+            var properties = t.GetProperties();
+
+            foreach (var property in properties)  
+            {  
+                Console.WriteLine($"Here are the attributes of property '{property.Name}':");  
+                //var value = property.GetValue(instance, new object[]{});
+                var propertyAttributes = property.GetCustomAttributes(typeof(MyTranslation));
+                foreach(var attribute in propertyAttributes)
+                {
+                    if (attribute is MyTranslation)
+                    {
+                        var myTranslation = attribute as MyTranslation;
+                        Console.WriteLine($"   MyTranslation Language={myTranslation.Language} Text={myTranslation.Text}");
+                    }
+                }
+            }  
         }
     }
 
