@@ -4,54 +4,59 @@ using Geschäftslogik;
 namespace Taschenrechner
 {
     /// <summary>
-    /// User Interface für den Taschenrechner
+    /// User interface for the calculator
     /// </summary>
     public class CalculatorUI
     {
-        private string _PreviousOperator;
-        private ICalculator _Calc;
+        private string _previousOperator;
+        private ICalculator _calculator;
 
         public CalculatorUI(ICalculator calculator_implementation)
         {
-            _Calc = calculator_implementation;
+            _calculator = calculator_implementation;
         }
 
         /// <summary>
-        /// Bekommt den Code der gedrückten Taste und liefert den nächsten Anzeigewert zurück
+        /// Gets the code of the key pressed and returns the next display value
         /// </summary>
-        public string Process_key_pressure_and_return_new_display_text(string taste)
+        public string Process_key_pressure_and_return_new_display_text(string key)
         {
-            if (int.TryParse(taste, out int Zahl))
+            bool keyIsADigit = int.TryParse(key, out int Zahl);
+            if (keyIsADigit)
                 return ProcessDigit(Zahl);
             else 
-                return ProcessOperatorKey(taste);
+                return ProcessOperatorKey(key);
         }
 
         private string ProcessDigit(int digit)
         {
-            _Calc.InsertDigitInDisplay(digit);
-            return _Calc.Value;
+            _calculator.InsertDigitInDisplay(digit);
+            return _calculator.Value;
         }
 
+        /// <summary>
+        /// For operators, save the operator and the previous value.
+        /// For Result key, apply the operator and return the result
+        /// </summary>
         private string ProcessOperatorKey(string key)
         {
             if (key == "+" || key == "-")
             {
-                _Calc.PreviousValue = _Calc.Value;
-                _Calc.Value = "0";
-                _PreviousOperator = key;
-                return _Calc.Value.ToString();
+                _calculator.PreviousValue = _calculator.Value;
+                _calculator.Value = "0";
+                _previousOperator = key;
+                return _calculator.Value.ToString();
             }
 
             if (key == "=" || key == "\r")
             {
-                if (_PreviousOperator == "+")
-                    _Calc.Add();
-                if (_PreviousOperator == "-")
-                    _Calc.Subtract();
+                if (_previousOperator == "+")
+                    _calculator.Add();
+                if (_previousOperator == "-")
+                    _calculator.Subtract();
 
-                _Calc.PreviousValue = _Calc.Value;
-                return _Calc.Value.ToString();
+                _calculator.PreviousValue = _calculator.Value;
+                return _calculator.Value.ToString();
             }
             throw new NotImplementedException();
         }

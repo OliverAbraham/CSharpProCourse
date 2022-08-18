@@ -12,12 +12,12 @@ namespace WpfApp3
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int Operand1 = Convert.ToInt32(operand1.Text);
-            int Operand2 = Convert.ToInt32(operand2.Text);
+            int value1 = Convert.ToInt32(operand1.Text);
+            int value2 = Convert.ToInt32(operand2.Text);
 
-            int Ergebnis = Operand1 + Operand2;
+            int resultValue = value1 + value2;
 
-            ergebnis.Text = Ergebnis.ToString();
+            result.Text = resultValue.ToString();
         }
     }
 }

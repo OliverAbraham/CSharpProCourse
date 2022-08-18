@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Taschenrechner.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Taschenrechner" Height="271" Width="280"
+        Title="Calculator" Height="271" Width="280"
         FontSize="16" FontWeight="Bold">
     <Grid>
         <TextBox Height="38" Margin="21,22,20,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="24" HorizontalContentAlignment="Right"/>

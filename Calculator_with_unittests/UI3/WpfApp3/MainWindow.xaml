@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp3"
         mc:Ignorable="d"
-        Title="Der schlechteste Taschenrechner der Welt" Height="204.898" Width="335.673">
+        Title="The worst calulator in the world" Height="204.898" Width="335.673">
     <Grid>
         <TextBox Name="operand1" HorizontalAlignment="Left" Height="23" Margin="55,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="operand2" HorizontalAlignment="Left" Height="23" Margin="55,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="55,91,0,0" VerticalAlignment="Top" Width="40" FontSize="20" Height="36" Click="Button_Click"/>
-        <TextBox Name="ergebnis" HorizontalAlignment="Left" Height="23" Margin="55,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="result" HorizontalAlignment="Left" Height="23" Margin="55,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

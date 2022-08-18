@@ -9,12 +9,12 @@ namespace Taschenrechner.Tests
     public class CalculatorUITests
     {
         private string actual;
-        private CalculatorUI Objekt;
+        private CalculatorUI sut;
 
         private void Setup()
         {
-            Calculator DummyEngine = new Calculator();
-            Objekt = new CalculatorUI(DummyEngine);
+            var dummyEngine = new Calculator();
+            sut = new CalculatorUI(dummyEngine);
         }
 
         [TestMethod()]
@@ -22,16 +22,16 @@ namespace Taschenrechner.Tests
         {
             Setup();
 
-            actual = Objekt.Process_key_pressure_and_return_new_display_text("0");
+            actual = sut.Process_key_pressure_and_return_new_display_text("0");
             actual.Should().Be("0", "we pressed the null");
 
-            actual = Objekt.Process_key_pressure_and_return_new_display_text("1");
+            actual = sut.Process_key_pressure_and_return_new_display_text("1");
             actual.Should().Be("1", "we pressed the one");
 
-            actual = Objekt.Process_key_pressure_and_return_new_display_text("2");
+            actual = sut.Process_key_pressure_and_return_new_display_text("2");
             actual.Should().Be("12", "we pressed one and two");
 
-            actual = Objekt.Process_key_pressure_and_return_new_display_text("3");
+            actual = sut.Process_key_pressure_and_return_new_display_text("3");
             actual.Should().Be("123", "we pressed one, two and three");
         }
 
@@ -39,33 +39,41 @@ namespace Taschenrechner.Tests
         public void Should_process_equal_key_correctly()
         {
             Setup();
-            actual = Objekt.Process_key_pressure_and_return_new_display_text("=");
+            actual = sut.Process_key_pressure_and_return_new_display_text("=");
             actual.Should().Be("0", "we didn't press any digit key");
         }
 
         [TestMethod()]
-        public void Should_add_on_plus_pressure()
+        public void Should_call_add_on_plus_pressure()
         {
-            actual = Objekt.Process_key_pressure_and_return_new_display_text("1");
-            actual = Objekt.Process_key_pressure_and_return_new_display_text("2");
+            Setup();
+
+            actual = sut.Process_key_pressure_and_return_new_display_text("1");
+            actual = sut.Process_key_pressure_and_return_new_display_text("2");
             actual.Should().Be("12", "we pressed one and two");
 
-            actual = Objekt.Process_key_pressure_and_return_new_display_text("+");
-            actual = Objekt.Process_key_pressure_and_return_new_display_text("4");
-            actual = Objekt.Process_key_pressure_and_return_new_display_text("=");
-            actual.Should().Be("16", "we added 12 and 4");
+            actual = sut.Process_key_pressure_and_return_new_display_text("+");
+            actual.Should().Be("0", "we pressed an operator key");
+
+            actual = sut.Process_key_pressure_and_return_new_display_text("4");
+            actual.Should().Be("4", "we pressed 4");
+
+            actual = sut.Process_key_pressure_and_return_new_display_text("=");
+            actual.Should().Be("16", "this is the result of our calculator engine");
         }
 
         [TestMethod()]
-        public void Should_subtract_on_minus_pressure()
+        public void Should_call_subtract_on_minus_pressure()
         {
-            actual = Objekt.Process_key_pressure_and_return_new_display_text("1");
-            actual = Objekt.Process_key_pressure_and_return_new_display_text("2");
+            Setup();
+
+            actual = sut.Process_key_pressure_and_return_new_display_text("1");
+            actual = sut.Process_key_pressure_and_return_new_display_text("2");
             actual.Should().Be("12", "we pressed one and two");
 
-            actual = Objekt.Process_key_pressure_and_return_new_display_text("-");
-            actual = Objekt.Process_key_pressure_and_return_new_display_text("4");
-            actual = Objekt.Process_key_pressure_and_return_new_display_text("=");
+            actual = sut.Process_key_pressure_and_return_new_display_text("-");
+            actual = sut.Process_key_pressure_and_return_new_display_text("4");
+            actual = sut.Process_key_pressure_and_return_new_display_text("=");
             actual.Should().Be("8", "we subtracted 4 from 12");
         }
     }
