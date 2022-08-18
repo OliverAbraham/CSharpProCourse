@@ -22,18 +22,18 @@ namespace Excel_XLSX_Library
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Read Excel XLSX File and extract a cell value");
+            var filename = "Demodatei.xlsx";
+			Console.WriteLine($"Reading demo file 'filename' and extracting some cell values");
 
-            var filePath = "Demodatei.xlsx";
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
-            using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read))
+            using (var stream = File.Open(filename, FileMode.Open, FileAccess.Read))
             {
                 // Auto-detect format, supports:
                 //  - Binary Excel files (2.0-2003 format; *.xls)
                 //  - OpenXml Excel files (2007 format; *.xlsx, *.xlsb)
                 using (var reader = ExcelReaderFactory.CreateReader(stream))
                 {
-                    //// --------------------- VARIANTE 1 ------------------------------
+                    //// --------------------- VARIANT 1 ------------------------------
                     // 1. Use the reader methods
                     do
                     {
@@ -46,7 +46,7 @@ namespace Excel_XLSX_Library
                     } while (reader.NextResult());
 
 
-                    //// --------------------- VARIANTE 2 ------------------------------
+                    //// --------------------- VARIANT 2 ------------------------------
                     //// 2. Use the AsDataSet extension method
                     //var result = reader.AsDataSet();
                     //// The result of each spreadsheet is in result.Tables
