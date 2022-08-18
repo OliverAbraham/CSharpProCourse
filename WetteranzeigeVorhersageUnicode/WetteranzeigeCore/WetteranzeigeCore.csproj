@@ -9,13 +9,13 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Hausnet\Libs\Abraham.Internet\Abraham.Internet.csproj" />
-    <ProjectReference Include="..\..\..\Hausnet\Libs\Abraham.Weather\Abraham.Weather.csproj" />
+    <ProjectReference Include="..\Abraham.Internet\Abraham.Internet.csproj" />
+    <ProjectReference Include="..\Abraham.Weather\Abraham.Weather.csproj" />
   </ItemGroup>
 
 </Project>

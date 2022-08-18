@@ -6,7 +6,7 @@ Console.WriteLine("Doing simple REST calls with RestSharp nuget package");
 var client = new RestClient("http://lentfoehrden.de");
 // client.Authenticator = new HttpBasicAuthenticator(username, password);
 
-var request = new RestRequest("/wp-json/wp/v2/pages/71", Method.GET);
+var request = new RestRequest("/wp-json/wp/v2/pages/71", Method.Get);
 //request.AddParameter("name", "value"); // adds to POST or URL querystring based on Method
 //request.AddUrlSegment("id", "123"); // replaces matching token in request.Resource
 

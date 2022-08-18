@@ -33,19 +33,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Google.ProtocolBuffers, Version=2.4.1.555, Culture=neutral, PublicKeyToken=55f7125234beb589, processorArchitecture=MSIL">
-      <HintPath>..\packages\Google.ProtocolBuffers.2.4.1.555\lib\net40\Google.ProtocolBuffers.dll</HintPath>
+      <HintPath>..\..\packages\Google.ProtocolBuffers.2.4.1.555\lib\net40\Google.ProtocolBuffers.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Google.ProtocolBuffers.Serialization, Version=2.4.1.555, Culture=neutral, PublicKeyToken=55f7125234beb589, processorArchitecture=MSIL">
-      <HintPath>..\packages\Google.ProtocolBuffers.2.4.1.555\lib\net40\Google.ProtocolBuffers.Serialization.dll</HintPath>
+      <HintPath>..\..\packages\Google.ProtocolBuffers.2.4.1.555\lib\net40\Google.ProtocolBuffers.Serialization.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="May, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Strilanc.Value.May.1.0.2\lib\portable-net4+sl4+wp7+win8\May.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="mycurve25519">
-      <HintPath>..\Debug\mycurve25519.dll</HintPath>
+      <HintPath>..\..\packages\Strilanc.Value.May.1.0.2\lib\portable-net4+sl4+wp7+win8\May.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -142,6 +138,12 @@
     <None Include="Protobuf\LocalStorageProtocol.proto" />
     <None Include="Protobuf\Makefile.bat" />
     <None Include="Protobuf\WhisperTextProtocol.proto" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mycurve25519\mycurve25519\mycurve25519.vcxproj">
+      <Project>{c2bed275-103a-437a-8da3-0e17ea241f3e}</Project>
+      <Name>mycurve25519</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
