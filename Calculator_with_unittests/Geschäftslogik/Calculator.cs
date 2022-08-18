@@ -12,40 +12,40 @@ namespace Geschäftslogik
     }
 
     /// <summary>
-    /// Rechenlogik für den Taschenrechner
+    /// Math logic for the Calculator
     /// </summary>
     public class Calculator : ICalculator
     {
-        public string Value { get { return _Value.ToString(); } set { _Value = Convert.ToInt32(value); } }
-        public string PreviousValue { get { return _PreviousValue.ToString(); } set { _PreviousValue = Convert.ToInt32(value); } }
+        public string Value { get { return _value.ToString(); } set { _value = Convert.ToInt32(value); } }
+        public string PreviousValue { get { return _previousValue.ToString(); } set { _previousValue = Convert.ToInt32(value); } }
 
-        private int _Value;
-        private int _PreviousValue;
+        private int _value;
+        private int _previousValue;
 
 
         public void Add()
         {
-            _Value = Add(_PreviousValue, _Value);
+            _value = Add(_previousValue, _value);
         }
 
         public void Subtract()
         {
-            _Value = Subtract(_PreviousValue, _Value);
+            _value = Subtract(_previousValue, _value);
         }
 
-        public int Add(int zahla, int zahlb)
+        public int Add(int numbera, int numberb)
         {
-            return zahla + zahlb;
+            return numbera + numberb;
         }
 
-        public int Subtract(int zahla, int zahlb)
+        public int Subtract(int numbera, int numberb)
         {
-            return zahla - zahlb;
+            return numbera - numberb;
         }
 
         public void InsertDigitInDisplay(int digit)
         {
-            _Value = _Value * 10 + digit;
+            _value = _value * 10 + digit;
         }
     }
 }

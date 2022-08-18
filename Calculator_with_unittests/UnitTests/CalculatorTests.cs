@@ -7,50 +7,50 @@ namespace Geschäftslogik.Tests
     public class CalculatorTests
     {
         /// <summary>
-        /// Testet, ob die Addition funktioniert.
-        /// Erwartete Reaktion: Es kommt die Summe der Operanden heraus.
+        /// Tests if the addition works
+        /// Expected reaction: returns the sum of the operands
         /// </summary>
         [TestMethod()]
         public void Should_add_correctly()
         {
-            Calculator Objekt = new Calculator();
+            var sut = new Calculator();
 
-            int Actual = Objekt.Add(3,4);
+            int actual = sut.Add(3,4);
 
-            int Expected = 7;
-            Actual.Should().Be(Expected, "weil das beim Addieren herauskommen muss");
+            int expected = 7;
+            actual.Should().Be(expected, "this is the sum");
         }
 
 
         /// <summary>
-        /// Testet, ob die Subtraktion funktioniert.
-        /// Erwartete Reaktion: Es kommt die Differenz der Operanden heraus.
+        /// Tests if the subtraction works
+        /// Expected reaction: returns the difference of the operands
         /// </summary>
         [TestMethod()]
         public void Should_subtract_correctly()
         {
-            Calculator Objekt = new Calculator();
+            var sut = new Calculator();
 
-            int Actual = Objekt.Subtract(3, 4);
+            int actual = sut.Subtract(3, 4);
 
-            int Expected = -1;
-            Actual.Should().Be(Expected, "weil das beim Subtrahieren herauskommen muss");
+            int expected = -1;
+            actual.Should().Be(expected, "this is the difference");
         }
 
 
         ///// <summary>
-        ///// Testet, ob die Multiplikation funktioniert.
-        ///// Erwartete Reaktion: Es kommt die Differenz der Operanden heraus.
+        ///// Tests if the multiplication works
+        ///// Expected reaction: returns the product of the operands
         ///// </summary>
         //[TestMethod()]
         //public void Should_multiply_correctly()
         //{
-        //    Calculator Objekt = new Calculator();
+        //    var sut = new Calculator();
         //
-        //    int Actual = Objekt.Multiply(3,4);
+        //    int actual = sut.Multiply(3,4);
         //
-        //    int Expected = 12;
-        //    Actual.Should().Be(Expected, "weil 3 mal 4 nunmal 12 ergibt");
+        //    int expected = 12;
+        //    actual.Should().Be(expected, "weil 3 mal 4 nunmal 12 ergibt");
         //}
 
     }

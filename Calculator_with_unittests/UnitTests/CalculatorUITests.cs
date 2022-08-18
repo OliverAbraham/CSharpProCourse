@@ -8,7 +8,7 @@ namespace Taschenrechner.Tests
     [TestClass()]
     public class CalculatorUITests
     {
-        private string Actual;
+        private string actual;
         private CalculatorUI Objekt;
 
         private void Setup()
@@ -22,37 +22,51 @@ namespace Taschenrechner.Tests
         {
             Setup();
 
-            Actual = Objekt.Process_key_pressure_and_return_new_display_text("0");
-            Actual.Should().Be("0", "weil wir die Null gedrückt haben");
+            actual = Objekt.Process_key_pressure_and_return_new_display_text("0");
+            actual.Should().Be("0", "we pressed the null");
 
-            Actual = Objekt.Process_key_pressure_and_return_new_display_text("1");
-            Actual.Should().Be("1", "weil wir die Eins gedrückt haben");
+            actual = Objekt.Process_key_pressure_and_return_new_display_text("1");
+            actual.Should().Be("1", "we pressed the one");
 
-            Actual = Objekt.Process_key_pressure_and_return_new_display_text("2");
-            Actual.Should().Be("12", "weil wir Eins und Zwei gedrückt haben");
+            actual = Objekt.Process_key_pressure_and_return_new_display_text("2");
+            actual.Should().Be("12", "we pressed one and two");
 
-            Actual = Objekt.Process_key_pressure_and_return_new_display_text("3");
-            Actual.Should().Be("123", "weil wir Eins, Zwei und Drei gedrückt haben");
+            actual = Objekt.Process_key_pressure_and_return_new_display_text("3");
+            actual.Should().Be("123", "we pressed one, two and three");
         }
 
         [TestMethod()]
         public void Should_process_equal_key_correctly()
         {
             Setup();
-            Actual = Objekt.Process_key_pressure_and_return_new_display_text("=");
-            Actual.Should().Be("0", "weil wir noch keine Ziffern-Taste gedrückt haben");
+            actual = Objekt.Process_key_pressure_and_return_new_display_text("=");
+            actual.Should().Be("0", "we didn't press any digit key");
         }
 
         [TestMethod()]
         public void Should_add_on_plus_pressure()
         {
-            Actual = Objekt.Process_key_pressure_and_return_new_display_text("1");
-            Actual = Objekt.Process_key_pressure_and_return_new_display_text("2");
-            Actual.Should().Be("12", "weil wir Eins und Zwei gedrückt haben");
-            Actual = Objekt.Process_key_pressure_and_return_new_display_text("+");
-            Actual = Objekt.Process_key_pressure_and_return_new_display_text("4");
-            Actual = Objekt.Process_key_pressure_and_return_new_display_text("=");
-            Actual.Should().Be("16", "weil wir Eins und Zwei gedrückt haben");
+            actual = Objekt.Process_key_pressure_and_return_new_display_text("1");
+            actual = Objekt.Process_key_pressure_and_return_new_display_text("2");
+            actual.Should().Be("12", "we pressed one and two");
+
+            actual = Objekt.Process_key_pressure_and_return_new_display_text("+");
+            actual = Objekt.Process_key_pressure_and_return_new_display_text("4");
+            actual = Objekt.Process_key_pressure_and_return_new_display_text("=");
+            actual.Should().Be("16", "we added 12 and 4");
+        }
+
+        [TestMethod()]
+        public void Should_subtract_on_minus_pressure()
+        {
+            actual = Objekt.Process_key_pressure_and_return_new_display_text("1");
+            actual = Objekt.Process_key_pressure_and_return_new_display_text("2");
+            actual.Should().Be("12", "we pressed one and two");
+
+            actual = Objekt.Process_key_pressure_and_return_new_display_text("-");
+            actual = Objekt.Process_key_pressure_and_return_new_display_text("4");
+            actual = Objekt.Process_key_pressure_and_return_new_display_text("=");
+            actual.Should().Be("8", "we subtracted 4 from 12");
         }
     }
 

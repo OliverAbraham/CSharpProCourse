@@ -53,9 +53,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Geschäftslogik\Geschäftslogik.csproj">
+    <ProjectReference Include="..\Geschäftslogik\CalculatorBusinessLogic.csproj">
       <Project>{c5fc12ce-f902-4b69-ba52-7a525ac5b419}</Project>
-      <Name>Geschäftslogik</Name>
+      <Name>CalculatorBusinessLogic</Name>
     </ProjectReference>
     <ProjectReference Include="..\UserInterfaceLogik\UserInterfaceLogik.csproj">
       <Project>{5A74CD7A-9F2E-411D-9479-1A6E5A40A545}</Project>

@@ -418,7 +418,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "65 CSharp Language Features
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpLanguageFeatures", "CSharpLanguageFeatures\CSharpLanguageFeatures.csproj", "{FC3855A0-A955-4C52-813F-8A68FB7F788E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geschäftslogik", "Calculator_with_unittests\Geschäftslogik\Geschäftslogik.csproj", "{C5FC12CE-F902-4B69-BA52-7A525AC5B419}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorBusinessLogic", "Calculator_with_unittests\Geschäftslogik\CalculatorBusinessLogic.csproj", "{C5FC12CE-F902-4B69-BA52-7A525AC5B419}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taschenrechner_Simpel", "Calculator_with_unittests\UI0\Taschenrechner_Simpel.csproj", "{076D1001-7B55-4C57-925F-D24516970BA1}"
 EndProject
@@ -428,7 +428,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taschenrechner_WPF", "Calcu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taschenrechner_WPF_Simpel", "Calculator_with_unittests\UI3\WpfApp3\Taschenrechner_WPF_Simpel.csproj", "{667FD9ED-2C89-4F6A-B3FF-890C5AAAF7BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "Calculator_with_unittests\UnitTests\UnitTests.csproj", "{37C01CF4-F422-463D-AD44-7C6D8734AB28}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorUnitTests", "Calculator_with_unittests\UnitTests\CalculatorUnitTests.csproj", "{37C01CF4-F422-463D-AD44-7C6D8734AB28}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterfaceLogik", "Calculator_with_unittests\UserInterfaceLogik\UserInterfaceLogik.csproj", "{5A74CD7A-9F2E-411D-9479-1A6E5A40A545}"
 EndProject

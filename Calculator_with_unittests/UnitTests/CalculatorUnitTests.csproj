@@ -67,9 +67,9 @@
     <Compile Include="CalculatorUITests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Geschäftslogik\Geschäftslogik.csproj">
+    <ProjectReference Include="..\Geschäftslogik\CalculatorBusinessLogic.csproj">
       <Project>{C5FC12CE-F902-4B69-BA52-7A525AC5B419}</Project>
-      <Name>Geschäftslogik</Name>
+      <Name>CalculatorBusinessLogic</Name>
     </ProjectReference>
     <ProjectReference Include="..\UserInterfaceLogik\UserInterfaceLogik.csproj">
       <Project>{5A74CD7A-9F2E-411D-9479-1A6E5A40A545}</Project>
