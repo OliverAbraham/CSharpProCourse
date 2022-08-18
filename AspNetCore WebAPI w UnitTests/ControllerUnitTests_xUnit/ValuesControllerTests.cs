@@ -1,7 +1,5 @@
 using AspNetCore_WebAPI_w_UnitTests.Controllers;
 using AspNetCore_WebAPI_w_UnitTests.Models;
-using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
 using Xunit;
 
@@ -9,6 +7,9 @@ namespace ControllerUnitTests_xUnit
 {
     public class ValuesControllerTests
     {
+        /// <summary>
+        /// Checks if the controller endpoint returns the expected data
+        /// </summary>
         [Fact]
         public void TestMethod1()
         {

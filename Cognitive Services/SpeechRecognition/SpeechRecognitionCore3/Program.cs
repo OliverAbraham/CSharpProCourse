@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using HomenetBase;
-using HomenetClient;
+//using HomenetBase;
+//using HomenetClient;
 
 namespace SpeechRecognitionCore3
 {

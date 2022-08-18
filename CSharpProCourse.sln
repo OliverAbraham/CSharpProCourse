@@ -293,7 +293,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleUnzip", "ZipCompressi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipArchiveTest", "ZipCompression\ZipArchiveTest\ZipArchiveTest.csproj", "{8E60054A-07F7-46E0-A9A6-2FB2B0F36E67}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "48 Speech recognition", "48 Speech recognition", "{6824A030-FE90-42DD-BC9E-42B5D5F7FF5E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "48 Speech recognition (not working)", "48 Speech recognition (not working)", "{6824A030-FE90-42DD-BC9E-42B5D5F7FF5E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeechRecognition", "Cognitive Services\SpeechRecognition\SpeechRecognition\SpeechRecognition.csproj", "{2582AF17-1A0A-4736-BA14-8297841A70C6}"
 EndProject
@@ -478,13 +478,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure4Alexa", "Alexa\Azure4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "22 Attributes (for classes, methods etc)", "22 Attributes (for classes, methods etc)", "{CFFF1881-EA8E-4927-883F-88E747C4836C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attributes", "Attributes\Attributes\Attributes.csproj", "{4E004F60-CC9B-4AF9-82B4-B5C64B23FAE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Attributes", "Attributes\Attributes\Attributes.csproj", "{4E004F60-CC9B-4AF9-82B4-B5C64B23FAE8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abraham.Internet", "WetteranzeigeVorhersageUnicode\Abraham.Internet\Abraham.Internet.csproj", "{CCB89C48-9930-4BF8-B81A-E92C3DD50808}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abraham.Weather", "WetteranzeigeVorhersageUnicode\Abraham.Weather\Abraham.Weather.csproj", "{4A5F4D39-BDB1-491C-973A-C98F17A16DD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather", "WetteranzeigeVorhersageUnicode\Weather\Weather.csproj", "{8033FFB2-A6F4-451E-85DC-8BD671245D13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather", "WetteranzeigeVorhersageUnicode\Weather\Weather.csproj", "{8033FFB2-A6F4-451E-85DC-8BD671245D13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

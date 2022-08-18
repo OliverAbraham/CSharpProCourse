@@ -20,7 +20,6 @@ namespace AspNetCore_WebAPI_w_UnitTests
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
             services.AddScoped<IMyModel, MyModel>();
         }
 
@@ -37,7 +36,12 @@ namespace AspNetCore_WebAPI_w_UnitTests
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+            //app.UseMvc();
+
+            app.UseRouting();
+            app.UseEndpoints(endpoints => {
+                endpoints.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
         }
     }
 }
