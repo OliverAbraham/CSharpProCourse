@@ -1,6 +1,7 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json;
 
-Console.WriteLine("Serializing and deserializing to and from JSON (with Newtonsoft JSON)");
+
+Console.WriteLine("Serializing and deserializing to and from JSON (with built-in function)");
 
 
 var myData         = new MyData();
@@ -15,7 +16,7 @@ Console.WriteLine($"myData.Amount      = '{myData.Amount     }'");
 
 Console.WriteLine($"\nWriting this data to a file");
 
-var jsonToFile = JsonConvert.SerializeObject(myData);
+var jsonToFile = JsonSerializer.Serialize(myData);
 File.WriteAllText("JsonSerializerDemo.dat", jsonToFile);
 
 
@@ -25,7 +26,7 @@ var jsonFromFile = File.ReadAllText("JsonSerializerDemo.dat");
 
 Console.WriteLine($"\nConverting back to my class");
 
-var myDataBack = JsonConvert.DeserializeObject<MyData>(jsonFromFile);
+var myDataBack = JsonSerializer.Deserialize<MyData>(jsonFromFile);
 
 Console.WriteLine($"\nThe result:");
 Console.WriteLine($"myData.Name        = '{myDataBack.Name       }'");

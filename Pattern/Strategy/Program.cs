@@ -1,29 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Strategy
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            Console.WriteLine("Strategy pattern demo.");
+            
             IStrategy s;
-            Console.WriteLine("Wir erzeugen zunächst die erste Strategie und benutzen die Methoden:");
+            Console.WriteLine("Create the first strategy and use it:");
             s = new Strategy1();
-            Mach_was_damit(s);
+            DoSomething(s);
 
-            Console.WriteLine("Jetzt schalten wir auf die zweite Strategie um:");
+            Console.WriteLine("Create the second and use it:");
             s = new Strategy2();
-            Mach_was_damit(s);
-            Console.ReadKey();
+            DoSomething(s);
         }
 
-        static void Mach_was_damit(IStrategy s)
+        static void DoSomething(IStrategy s)
         {
-            Console.WriteLine("Hier in Methode 'Mach_was_damit' wissen wir nicht mehr, womit wir arbeiten:");
+            Console.WriteLine("Now in the strategy. Please not we don't know which strategy we use!");
             s.Load();
             s.Save();
         }
@@ -37,27 +34,13 @@ namespace Strategy
 
     class Strategy1 : IStrategy
     {
-        public void Load()
-        {
-            Console.WriteLine("Strategy1.Load");
-        }
-
-        public void Save()
-        {
-            Console.WriteLine("Strategy1.Save");
-        }
+        public void Load() { Console.WriteLine("Strategy1.Load"); }
+        public void Save() { Console.WriteLine("Strategy1.Save"); }
     }
 
     class Strategy2 : IStrategy
     {
-        public void Load()
-        {
-            Console.WriteLine("Strategy2.Load");
-        }
-
-        public void Save()
-        {
-            Console.WriteLine("Strategy2.Save");
-        }
+        public void Load() { Console.WriteLine("Strategy2.Load"); }
+        public void Save() { Console.WriteLine("Strategy2.Save"); }
     }
 }

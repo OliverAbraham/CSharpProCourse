@@ -20,32 +20,33 @@ namespace PollyTest
 		static void Main(string[] args)
 		{
 			Console.WriteLine("Testing the polly library with a simple retry pattern");
+			Console.WriteLine("Press a key to end the demo");
 
 			var policy = Policy
 				.Handle<MyDatabaseException>()
 				.Retry();
 
-			Console.WriteLine("Simulating a sequence of SQL commands, where every 5th call fails.");
+			Console.WriteLine("Simulating a action that fails every 5th time.");
+			Console.WriteLine("Polly should retry it if an error occurs.");
 			policy.Execute(
 				delegate()
 				{
 					Console.WriteLine($"Sequence is started from the beginning");
 					do
 					{
-						Do_something_and_throw_exception_every_fifth_time();
+						Do_something_and_simulate_a_fault_every_fifth_time();
 						Thread.Sleep(1000);
 					} while (!Console.KeyAvailable);
-
 				});
 		}
 
-		private static int _CallCounter = 0;
+		private static int _counter = 0;
 
-		private static void Do_something_and_throw_exception_every_fifth_time()
+		private static void Do_something_and_simulate_a_fault_every_fifth_time()
 		{
-			_CallCounter++;
-			Console.WriteLine($"Call no. {_CallCounter}...");
-			if ((_CallCounter % 5) == 0)
+			_counter++;
+			Console.WriteLine($"Call no. {_counter}...");
+			if ((_counter % 5) == 0)
 			{
 				Console.WriteLine($"Throwing an exception for demonstration!");
 				throw new MyDatabaseException();

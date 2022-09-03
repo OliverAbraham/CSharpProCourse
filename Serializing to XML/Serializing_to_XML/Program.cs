@@ -1,5 +1,4 @@
-﻿
-using System.Xml.Serialization;
+﻿using System.Xml.Serialization;
 
 Console.WriteLine("Serializing and deserializing data to and from XML");
 

@@ -23,7 +23,7 @@ namespace Excel_XLSX_Library
 		static void Main(string[] args)
 		{
             var filename = "Demodatei.xlsx";
-			Console.WriteLine($"Reading demo file 'filename' and extracting some cell values");
+			Console.WriteLine($"Reading demo file '{filename}' and extracting some cell values");
 
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
             using (var stream = File.Open(filename, FileMode.Open, FileAccess.Read))
@@ -41,7 +41,7 @@ namespace Excel_XLSX_Library
                         {
                             var txtA = reader.GetString(0);
                             var txtB = reader.GetString(1);
-							Console.WriteLine($"Spalte A: {txtA,20}   B: {txtB,20}");
+							Console.WriteLine($"Column A: {txtA,20}   B: {txtB,20}");
                         }
                     } while (reader.NextResult());
 
