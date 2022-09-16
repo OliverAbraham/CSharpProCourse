@@ -1,11 +1,9 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using StackRechner;
 
-namespace UnitTests
+namespace UnitTestsNew
 {
     [TestClass]
-    public class UnitTest1
+    public class StackCalculatorTests
     {
         // 1 + 2 = 3
         [TestMethod]
