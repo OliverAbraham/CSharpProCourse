@@ -416,9 +416,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorBusinessLogic", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taschenrechner_Simpel", "Calculator_with_unittests\UI0\Taschenrechner_Simpel.csproj", "{076D1001-7B55-4C57-925F-D24516970BA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taschenrechner_Commandline", "Calculator_with_unittests\UI1\Taschenrechner_Commandline.csproj", "{664AB2A7-D17B-4902-8A3E-68AE146F5667}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1 Taschenrechner_Commandline", "Calculator_with_unittests\UI1\1 Taschenrechner_Commandline.csproj", "{664AB2A7-D17B-4902-8A3E-68AE146F5667}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taschenrechner_WPF", "Calculator_with_unittests\UI2\Taschenrechner_WPF.csproj", "{42101936-1C44-4D5D-AFDA-E78CD34EA396}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2 Taschenrechner_WPF", "Calculator_with_unittests\UI2\2 Taschenrechner_WPF.csproj", "{42101936-1C44-4D5D-AFDA-E78CD34EA396}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taschenrechner_WPF_Simpel", "Calculator_with_unittests\UI3\WpfApp3\Taschenrechner_WPF_Simpel.csproj", "{667FD9ED-2C89-4F6A-B3FF-890C5AAAF7BF}"
 EndProject
@@ -476,7 +476,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abraham.Weather", "Wetteran
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather", "WetteranzeigeVorhersageUnicode\Weather\Weather.csproj", "{8033FFB2-A6F4-451E-85DC-8BD671245D13}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 UI", "1 UI", "{EFD7E070-7867-4AA9-BB5F-ED325D538ED0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 User interfaces", "1 User interfaces", "{EFD7E070-7867-4AA9-BB5F-ED325D538ED0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 UI logic", "2 UI logic", "{5ED26798-A5B5-4F60-B728-51E27B452C8C}"
 EndProject
@@ -514,7 +514,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "31 ASP.NET related examples
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parsing_HTML_with_HTML_Agility_Pack", "Parsing HTML\Parsing_HTML_with_HTML_Agility_Pack\Parsing_HTML_with_HTML_Agility_Pack.csproj", "{F99BCA1B-5FA3-42A3-923F-7C8D6BD4E8E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serializing_to_JSON_builtin", "Serializing to JSON\Serializing_to_JSON_builtin\Serializing_to_JSON_builtin.csproj", "{1D15785F-8745-4BB2-B216-FF7043777418}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serializing_to_JSON_builtin", "Serializing to JSON\Serializing_to_JSON_builtin\Serializing_to_JSON_builtin.csproj", "{1D15785F-8745-4BB2-B216-FF7043777418}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3 CalculatorWeb", "Calculator_with_unittests\UI4\CalculatorWebBlazor\3 CalculatorWeb.csproj", "{96A048FF-5043-434A-8BEC-88F4897FB95D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2206,6 +2208,18 @@ Global
 		{1D15785F-8745-4BB2-B216-FF7043777418}.Release|x64.Build.0 = Release|Any CPU
 		{1D15785F-8745-4BB2-B216-FF7043777418}.Release|x86.ActiveCfg = Release|Any CPU
 		{1D15785F-8745-4BB2-B216-FF7043777418}.Release|x86.Build.0 = Release|Any CPU
+		{96A048FF-5043-434A-8BEC-88F4897FB95D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96A048FF-5043-434A-8BEC-88F4897FB95D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96A048FF-5043-434A-8BEC-88F4897FB95D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{96A048FF-5043-434A-8BEC-88F4897FB95D}.Debug|x64.Build.0 = Debug|Any CPU
+		{96A048FF-5043-434A-8BEC-88F4897FB95D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{96A048FF-5043-434A-8BEC-88F4897FB95D}.Debug|x86.Build.0 = Debug|Any CPU
+		{96A048FF-5043-434A-8BEC-88F4897FB95D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96A048FF-5043-434A-8BEC-88F4897FB95D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96A048FF-5043-434A-8BEC-88F4897FB95D}.Release|x64.ActiveCfg = Release|Any CPU
+		{96A048FF-5043-434A-8BEC-88F4897FB95D}.Release|x64.Build.0 = Release|Any CPU
+		{96A048FF-5043-434A-8BEC-88F4897FB95D}.Release|x86.ActiveCfg = Release|Any CPU
+		{96A048FF-5043-434A-8BEC-88F4897FB95D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2433,6 +2447,7 @@ Global
 		{AA009368-C022-449C-AE48-EFB0BFBEE5D0} = {55B7355E-1E96-4052-8E7E-29CDEEC0AD16}
 		{F99BCA1B-5FA3-42A3-923F-7C8D6BD4E8E9} = {144B626E-364A-4B4D-8418-346DB532312A}
 		{1D15785F-8745-4BB2-B216-FF7043777418} = {7CF60739-12E6-45FA-9F82-4D8090B7F8D9}
+		{96A048FF-5043-434A-8BEC-88F4897FB95D} = {EFD7E070-7867-4AA9-BB5F-ED325D538ED0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {498C29EF-0474-4C7D-A825-BB7F36FA1E99}
