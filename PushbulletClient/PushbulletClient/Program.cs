@@ -16,7 +16,7 @@ namespace PushbulletSender
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Seding a message to my Pushbullet app on my phone");
+			Console.WriteLine("Sending a message to my Pushbullet app on my phone");
 
 			SendCommandToPushbulletDevice(
 				APIKey: "___ENTER___YOUR___DEVICE___KEY___HERE___", 
