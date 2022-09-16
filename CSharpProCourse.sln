@@ -50,7 +50,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "25 PasswordGenerator", "25 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasswordGenerator", "PasswordGenerator\PasswordGenerator\PasswordGenerator.csproj", "{56EB4B45-C3B5-4A9C-A857-035E70D82E33}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EmailClient_POP3_SMTP", "EmailClient_POP3_SMTP", "{FA972DE8-A6BB-4672-9907-25AFD16948B1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EmailClients_POP3_SMTP", "EmailClients_POP3_SMTP", "{FA972DE8-A6BB-4672-9907-25AFD16948B1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pop3Client", "EmailClient_POP3_SMTP\Pop3Client\Pop3Client.csproj", "{4261923D-5BC0-43A8-9C07-C39C575B7800}"
 EndProject
@@ -516,7 +516,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parsing_HTML_with_HTML_Agil
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serializing_to_JSON_builtin", "Serializing to JSON\Serializing_to_JSON_builtin\Serializing_to_JSON_builtin.csproj", "{1D15785F-8745-4BB2-B216-FF7043777418}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3 CalculatorWeb", "Calculator_with_unittests\UI4\CalculatorWebBlazor\3 CalculatorWeb.csproj", "{96A048FF-5043-434A-8BEC-88F4897FB95D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorWeb", "Calculator_with_unittests\UI4\CalculatorWebBlazor\CalculatorWeb.csproj", "{96A048FF-5043-434A-8BEC-88F4897FB95D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REST_client_with_JSON_result", "REST_client_with_JSON_result\REST_client_with_JSON_result.csproj", "{716ACA3E-BA2B-4FA0-BC0C-01E6E6943C97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2220,6 +2222,18 @@ Global
 		{96A048FF-5043-434A-8BEC-88F4897FB95D}.Release|x64.Build.0 = Release|Any CPU
 		{96A048FF-5043-434A-8BEC-88F4897FB95D}.Release|x86.ActiveCfg = Release|Any CPU
 		{96A048FF-5043-434A-8BEC-88F4897FB95D}.Release|x86.Build.0 = Release|Any CPU
+		{716ACA3E-BA2B-4FA0-BC0C-01E6E6943C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{716ACA3E-BA2B-4FA0-BC0C-01E6E6943C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{716ACA3E-BA2B-4FA0-BC0C-01E6E6943C97}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{716ACA3E-BA2B-4FA0-BC0C-01E6E6943C97}.Debug|x64.Build.0 = Debug|Any CPU
+		{716ACA3E-BA2B-4FA0-BC0C-01E6E6943C97}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{716ACA3E-BA2B-4FA0-BC0C-01E6E6943C97}.Debug|x86.Build.0 = Debug|Any CPU
+		{716ACA3E-BA2B-4FA0-BC0C-01E6E6943C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{716ACA3E-BA2B-4FA0-BC0C-01E6E6943C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{716ACA3E-BA2B-4FA0-BC0C-01E6E6943C97}.Release|x64.ActiveCfg = Release|Any CPU
+		{716ACA3E-BA2B-4FA0-BC0C-01E6E6943C97}.Release|x64.Build.0 = Release|Any CPU
+		{716ACA3E-BA2B-4FA0-BC0C-01E6E6943C97}.Release|x86.ActiveCfg = Release|Any CPU
+		{716ACA3E-BA2B-4FA0-BC0C-01E6E6943C97}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2448,6 +2462,7 @@ Global
 		{F99BCA1B-5FA3-42A3-923F-7C8D6BD4E8E9} = {144B626E-364A-4B4D-8418-346DB532312A}
 		{1D15785F-8745-4BB2-B216-FF7043777418} = {7CF60739-12E6-45FA-9F82-4D8090B7F8D9}
 		{96A048FF-5043-434A-8BEC-88F4897FB95D} = {EFD7E070-7867-4AA9-BB5F-ED325D538ED0}
+		{716ACA3E-BA2B-4FA0-BC0C-01E6E6943C97} = {B8474518-A430-41B4-9EB4-DC4D0C66613A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {498C29EF-0474-4C7D-A825-BB7F36FA1E99}
