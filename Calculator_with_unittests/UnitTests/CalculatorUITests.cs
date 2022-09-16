@@ -13,8 +13,8 @@ namespace Taschenrechner.Tests
 
         private void Setup()
         {
-            var dummyEngine = new Calculator();
-            sut = new CalculatorUI(dummyEngine);
+            var engineMock = new CalculatorMock();
+            sut = new CalculatorUI(engineMock);
         }
 
         [TestMethod()]
@@ -59,7 +59,7 @@ namespace Taschenrechner.Tests
             actual.Should().Be("4", "we pressed 4");
 
             actual = sut.Process_key_pressure_and_return_new_display_text("=");
-            actual.Should().Be("16", "this is the result of our calculator engine");
+            actual.Should().Be("7777", "this is the result of our calculator engine");
         }
 
         [TestMethod()]
@@ -74,15 +74,15 @@ namespace Taschenrechner.Tests
             actual = sut.Process_key_pressure_and_return_new_display_text("-");
             actual = sut.Process_key_pressure_and_return_new_display_text("4");
             actual = sut.Process_key_pressure_and_return_new_display_text("=");
-            actual.Should().Be("8", "we subtracted 4 from 12");
+            actual.Should().Be("8888", "we subtracted 4 from 12");
         }
     }
 
 
     /// <summary>
-    /// Rechenlogik für den Taschenrechner
+    /// Dummy implementation for testing
     /// </summary>
-    public class DummyCalculator : ICalculator
+    public class CalculatorMock : ICalculator
     {
         public string Value { get { return _Value.ToString(); } set { _Value = Convert.ToInt32(value); } }
         public string PreviousValue { get { return _PreviousValue.ToString(); } set { _PreviousValue = Convert.ToInt32(value); } }
@@ -91,8 +91,8 @@ namespace Taschenrechner.Tests
         private int _PreviousValue;
 
 
-        public void Add() {} // Dummy Implementation
-        public void Subtract() {} // Dummy Implementation
+        public void Add() { _Value = 7777; } // Dummy Implementation
+        public void Subtract() { _Value = 8888; } // Dummy Implementation
         public int Add(int zahla, int zahlb) { return 0; } // Dummy Implementation
         public int Subtract(int zahla, int zahlb) { return 0; } // Dummy Implementation
 

@@ -2,17 +2,8 @@
 
 namespace Geschäftslogik
 {
-    public interface ICalculator
-    {
-        void Add();
-        void Subtract();
-        void InsertDigitInDisplay(int digit);
-        string Value { get; set; }
-        string PreviousValue { get; set; }
-    }
-
     /// <summary>
-    /// Math logic for the Calculator
+    /// Math logic for the calculator
     /// </summary>
     public class Calculator : ICalculator
     {
