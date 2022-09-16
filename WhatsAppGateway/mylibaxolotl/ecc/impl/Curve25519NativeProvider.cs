@@ -21,36 +21,36 @@ namespace libaxolotl.ecc.impl
 {
 	class Curve25519NativeProvider : ICurve25519Provider
 	{
-		private mycurve25519.Curve25519Native native = new mycurve25519.Curve25519Native();
+		//private mycurve25519.Curve25519Native native = new mycurve25519.Curve25519Native();
 
 		public byte[] calculateAgreement(byte[] ourPrivate, byte[] theirPublic)
 		{
-			return native.calculateAgreement(ourPrivate, theirPublic);
+			return null;//return native.calculateAgreement(ourPrivate, theirPublic);
 		}
 
 		public byte[] calculateSignature(byte[] random, byte[] privateKey, byte[] message)
 		{
-			return native.calculateSignature(random, privateKey, message);
+			return null;//return native.calculateSignature(random, privateKey, message);
 		}
 
 		public byte[] generatePrivateKey(byte[] random)
 		{
-			return native.generatePrivateKey(random);
+			return null;//return native.generatePrivateKey(random);
 		}
 
 		public byte[] generatePublicKey(byte[] privateKey)
 		{
-			return native.generatePublicKey(privateKey);
+			return null;//return native.generatePublicKey(privateKey);
 		}
 
 		public bool isNative()
 		{
-			return native.isNative();
+			return false;//return native.isNative();
 		}
 
 		public bool verifySignature(byte[] publicKey, byte[] message, byte[] signature)
 		{
-			return native.verifySignature(publicKey, message, signature);
+			return false;//return native.verifySignature(publicKey, message, signature);
 		}
 	}
 }
