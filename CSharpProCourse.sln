@@ -516,13 +516,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serializing_to_JSON_builtin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorWeb", "Calculator_with_unittests\UI4\CalculatorWebBlazor\CalculatorWeb.csproj", "{96A048FF-5043-434A-8BEC-88F4897FB95D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REST_client_with_JSON_result", "REST_client_with_JSON_result\REST_client_with_JSON_result.csproj", "{716ACA3E-BA2B-4FA0-BC0C-01E6E6943C97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "REST_client_with_JSON_result", "REST_client_with_JSON_result\REST_client_with_JSON_result.csproj", "{716ACA3E-BA2B-4FA0-BC0C-01E6E6943C97}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FTP client", "FTP client", "{56372C79-739E-40D2-BBCA-6DA91A8F14A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTP_Client", "FTP_Client\FTP_Client.csproj", "{853C871A-F0CE-413C-B5CA-9DF6A91BCDE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FTP_Client", "FTP_Client\FTP_Client.csproj", "{853C871A-F0CE-413C-B5CA-9DF6A91BCDE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestsNew", "StackCalculator\UnitTestsNew\UnitTestsNew.csproj", "{73F3B010-771D-499D-AEB8-CB1908591ACA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestsNew", "StackCalculator\UnitTestsNew\UnitTestsNew.csproj", "{73F3B010-771D-499D-AEB8-CB1908591ACA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
