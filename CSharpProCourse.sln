@@ -524,6 +524,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FTP_Client", "FTP_Client\FT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestsNew", "StackCalculator\UnitTestsNew\UnitTestsNew.csproj", "{73F3B010-771D-499D-AEB8-CB1908591ACA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "F Using Openweathermap", "F Using Openweathermap", "{404DA6BB-9E3B-4914-A23F-FA950C59BCF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather_display_using_Openweathermap_org", "Weather_display_using_Openweathermap_org\Weather_display_using_Openweathermap_org.csproj", "{5E90DA03-7A8A-48C8-A124-26BFC0172659}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2250,6 +2254,18 @@ Global
 		{73F3B010-771D-499D-AEB8-CB1908591ACA}.Release|x64.Build.0 = Release|Any CPU
 		{73F3B010-771D-499D-AEB8-CB1908591ACA}.Release|x86.ActiveCfg = Release|Any CPU
 		{73F3B010-771D-499D-AEB8-CB1908591ACA}.Release|x86.Build.0 = Release|Any CPU
+		{5E90DA03-7A8A-48C8-A124-26BFC0172659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E90DA03-7A8A-48C8-A124-26BFC0172659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E90DA03-7A8A-48C8-A124-26BFC0172659}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5E90DA03-7A8A-48C8-A124-26BFC0172659}.Debug|x64.Build.0 = Debug|Any CPU
+		{5E90DA03-7A8A-48C8-A124-26BFC0172659}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5E90DA03-7A8A-48C8-A124-26BFC0172659}.Debug|x86.Build.0 = Debug|Any CPU
+		{5E90DA03-7A8A-48C8-A124-26BFC0172659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E90DA03-7A8A-48C8-A124-26BFC0172659}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E90DA03-7A8A-48C8-A124-26BFC0172659}.Release|x64.ActiveCfg = Release|Any CPU
+		{5E90DA03-7A8A-48C8-A124-26BFC0172659}.Release|x64.Build.0 = Release|Any CPU
+		{5E90DA03-7A8A-48C8-A124-26BFC0172659}.Release|x86.ActiveCfg = Release|Any CPU
+		{5E90DA03-7A8A-48C8-A124-26BFC0172659}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2481,6 +2497,8 @@ Global
 		{56372C79-739E-40D2-BBCA-6DA91A8F14A2} = {A6F028CF-6C99-4BEA-9312-C589E24035EF}
 		{853C871A-F0CE-413C-B5CA-9DF6A91BCDE4} = {56372C79-739E-40D2-BBCA-6DA91A8F14A2}
 		{73F3B010-771D-499D-AEB8-CB1908591ACA} = {33024F16-30A8-4A2A-96A3-67FA2B5DAA6F}
+		{404DA6BB-9E3B-4914-A23F-FA950C59BCF9} = {F26E6439-A1C0-4CF6-A015-506238D75605}
+		{5E90DA03-7A8A-48C8-A124-26BFC0172659} = {404DA6BB-9E3B-4914-A23F-FA950C59BCF9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {498C29EF-0474-4C7D-A825-BB7F36FA1E99}
