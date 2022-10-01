@@ -488,7 +488,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Bad approaches", "0 Bad a
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 File Formats", "02 File Formats", "{21B3AE5D-3AA9-4B7C-8737-ACF65444BC16}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Common Interfaces", "03 Common Interfaces", "{A6F028CF-6C99-4BEA-9312-C589E24035EF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Common Protocols", "03 Common Protocols", "{A6F028CF-6C99-4BEA-9312-C589E24035EF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Common Pattern", "04 Common Pattern", "{28205355-BC76-429D-8A3D-B5E026BD76CE}"
 EndProject
@@ -526,7 +526,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestsNew", "StackCalcul
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "F Using Openweathermap", "F Using Openweathermap", "{404DA6BB-9E3B-4914-A23F-FA950C59BCF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather_display_using_Openweathermap_org", "Weather_display_using_Openweathermap_org\Weather_display_using_Openweathermap_org.csproj", "{5E90DA03-7A8A-48C8-A124-26BFC0172659}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather_display_using_Openweathermap_org", "Weather_display_using_Openweathermap_org\Weather_display_using_Openweathermap_org.csproj", "{5E90DA03-7A8A-48C8-A124-26BFC0172659}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

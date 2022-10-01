@@ -31,7 +31,7 @@ namespace Pop3_Client
 			var emails = FetchAllMessages("pop3.1blu.de", 995, true, "c263677_1-mail", password);
 
 			foreach (var email in emails)
-				Console.WriteLine($"{email.Headers.Subject}");
+				Console.WriteLine($"{email.Headers.Date,-40} {email.Headers.Subject}");
 		}
 
 
@@ -96,7 +96,7 @@ namespace Pop3_Client
 				var key = Console.ReadKey(intercept: true);
 				if (key.KeyChar == '\r')
 					break;
-				password += key;
+				password += key.KeyChar;
 				Console.Write('*');
 			}
 
