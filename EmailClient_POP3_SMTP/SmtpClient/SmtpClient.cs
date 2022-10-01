@@ -42,6 +42,20 @@ namespace Abraham.Mail
 			_client.Disconnect (true);
 		}
 
+		public void SendEmail(string from, string to, string subject, string body)
+        {
+			var message         = new MimeKit.MimeMessage();
+			message.From		.Add(new MimeKit.MailboxAddress(from, from));
+			message.To			.Add(new MimeKit.MailboxAddress(to, to));
+			message.Subject     = subject;
+			
+			var builder			= new MimeKit.BodyBuilder();
+			builder.TextBody    = body;
+			//builder.Attachments.Add (...);
+			message.Body        = builder.ToMessageBody();
+			SendEmail(message);
+		}
+
 		public void SendEmail(MimeMessage message)
         {
 			_client.Send(message);

@@ -17,15 +17,12 @@ namespace Smtp_Client
 			_client.Open();
 
 
-			var message         = new MimeKit.MimeMessage();
-			message.From		.Add(new MimeKit.MailboxAddress("mail@oliver-abraham.de", "mail@oliver-abraham.de"));
-			message.To			.Add(new MimeKit.MailboxAddress("mail@oliver-abraham.de", "mail@oliver-abraham.de"));
-			message.Subject     = "Test-Email";
-			var builder			= new MimeKit.BodyBuilder();
-			builder.TextBody    = "Test-Email body"; //builder.Attachments.Add (...);
-			message.Body        = builder.ToMessageBody();
+			var from		    = "mail@oliver-abraham.de";
+			var to			    = "mail@oliver-abraham.de";
+			var subject         = "Test-Email";
+			var body            = "Test-Email body";
 
-			_client.SendEmail(message);
+			_client.SendEmail(from, to, subject, body);
 			Console.WriteLine("done");
 		}
 
