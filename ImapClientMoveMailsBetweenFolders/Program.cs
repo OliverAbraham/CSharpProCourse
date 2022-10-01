@@ -1,4 +1,6 @@
-﻿namespace ImapClientMoveMailsBetweenFolders
+﻿using Abraham.Mail;
+
+namespace ImapClientMoveMailsBetweenFolders
 {
 	class Program
 	{
@@ -22,33 +24,26 @@
 			folders.ForEach(x => Console.WriteLine($"    - {x.Name}"));
 
 
-			Console.WriteLine("\n\n\nReading the inbox...");
+			Console.WriteLine("\n\n\nSelecting the inbox...");
 			var inbox = _client.GetFolderByName(folders, "inbox");
+
+
+			Console.WriteLine("\n\n\nReading the inbox...");
 			var emails = _client.GetAllMessagesFromFolder(inbox);
+
 
 			Console.WriteLine("\n\n\nThese are the last 5 emails:");
 			var lastFiveEmails = emails.OrderByDescending(x => x.Msg.Date).Take(5).ToList();
 			folders.ForEach(x => Console.WriteLine($"    - {x}"));
 
 
-			Console.WriteLine("\n\n\nThe last email from your inbox is:");
-			var lastEmail = emails.Last();
-			Console.WriteLine($"    - {lastEmail}");
+			Console.WriteLine("\n\n\nReading only the unread messages...");
+			emails = _client.GetUnreadMessagesFromFolder(inbox);
 
 
-			Console.Write("\n\n\nEnter the folder name to move the last email to: ");
-			var folderName = Console.ReadLine();
-			Console.WriteLine();
-			
-			
-			var destination = _client.GetFolderByName(folders, folderName);
-			if (destination is null)
-				Console.WriteLine("that folder doesn't exist!");
-
-
-			Console.Write("\n\nMoving the mail to that folder...");
-			_client.MoveEmailToFolder(lastEmail, inbox, destination);
-			Console.WriteLine("done");
+			Console.WriteLine("\n\n\nThese are the last 5 unread emails:");
+			lastFiveEmails = emails.OrderByDescending(x => x.Msg.Date).Take(5).ToList();
+			lastFiveEmails.ForEach(x => Console.WriteLine($"    - {x}"));
  			_client.Close();
 		}
 
