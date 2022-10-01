@@ -84,7 +84,7 @@ namespace Abraham.Mail
 
 			var uniqueIDs = folder.Search (searchQuery);
 			foreach (var uniqueID in uniqueIDs) 
-				results.Add(new Message(uniqueID, _client.Inbox.GetMessage (uniqueID)));
+				results.Add(new Message(uniqueID, folder.GetMessage (uniqueID)));
 
 			folder.Close();
 			return results;
