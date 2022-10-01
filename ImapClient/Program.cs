@@ -7,7 +7,7 @@ namespace ImapClient
 {
 	class Program
 	{
-		static void Main(string[] args)
+		static void Main()
 		{
 			Console.WriteLine("IMAP client - read all unread emails from your inbox");
 

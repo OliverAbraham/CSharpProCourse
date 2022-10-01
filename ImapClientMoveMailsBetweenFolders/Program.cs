@@ -4,7 +4,7 @@ namespace ImapClientMoveMailsBetweenFolders
 {
 	class Program
 	{
-		static void Main(string[] args)
+		static void Main()
 		{
 			Console.WriteLine("IMAP client - move an email from your inbox to a different folder");
 
