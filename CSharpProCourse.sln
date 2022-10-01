@@ -528,6 +528,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "F Using Openweathermap", "F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather_display_using_Openweathermap_org", "Weather_display_using_Openweathermap_org\Weather_display_using_Openweathermap_org.csproj", "{5E90DA03-7A8A-48C8-A124-26BFC0172659}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImapClient", "ImapClient\ImapClient.csproj", "{578FCC12-D725-4069-A353-AEC5178A07E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImapClientMoveMailsBetweenFolders", "ImapClientMoveMailsBetweenFolders\ImapClientMoveMailsBetweenFolders.csproj", "{AB7E236E-B261-401A-82F9-1DAC75E1A18C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2266,6 +2270,30 @@ Global
 		{5E90DA03-7A8A-48C8-A124-26BFC0172659}.Release|x64.Build.0 = Release|Any CPU
 		{5E90DA03-7A8A-48C8-A124-26BFC0172659}.Release|x86.ActiveCfg = Release|Any CPU
 		{5E90DA03-7A8A-48C8-A124-26BFC0172659}.Release|x86.Build.0 = Release|Any CPU
+		{578FCC12-D725-4069-A353-AEC5178A07E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{578FCC12-D725-4069-A353-AEC5178A07E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{578FCC12-D725-4069-A353-AEC5178A07E5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{578FCC12-D725-4069-A353-AEC5178A07E5}.Debug|x64.Build.0 = Debug|Any CPU
+		{578FCC12-D725-4069-A353-AEC5178A07E5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{578FCC12-D725-4069-A353-AEC5178A07E5}.Debug|x86.Build.0 = Debug|Any CPU
+		{578FCC12-D725-4069-A353-AEC5178A07E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{578FCC12-D725-4069-A353-AEC5178A07E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{578FCC12-D725-4069-A353-AEC5178A07E5}.Release|x64.ActiveCfg = Release|Any CPU
+		{578FCC12-D725-4069-A353-AEC5178A07E5}.Release|x64.Build.0 = Release|Any CPU
+		{578FCC12-D725-4069-A353-AEC5178A07E5}.Release|x86.ActiveCfg = Release|Any CPU
+		{578FCC12-D725-4069-A353-AEC5178A07E5}.Release|x86.Build.0 = Release|Any CPU
+		{AB7E236E-B261-401A-82F9-1DAC75E1A18C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB7E236E-B261-401A-82F9-1DAC75E1A18C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB7E236E-B261-401A-82F9-1DAC75E1A18C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AB7E236E-B261-401A-82F9-1DAC75E1A18C}.Debug|x64.Build.0 = Debug|Any CPU
+		{AB7E236E-B261-401A-82F9-1DAC75E1A18C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AB7E236E-B261-401A-82F9-1DAC75E1A18C}.Debug|x86.Build.0 = Debug|Any CPU
+		{AB7E236E-B261-401A-82F9-1DAC75E1A18C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB7E236E-B261-401A-82F9-1DAC75E1A18C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB7E236E-B261-401A-82F9-1DAC75E1A18C}.Release|x64.ActiveCfg = Release|Any CPU
+		{AB7E236E-B261-401A-82F9-1DAC75E1A18C}.Release|x64.Build.0 = Release|Any CPU
+		{AB7E236E-B261-401A-82F9-1DAC75E1A18C}.Release|x86.ActiveCfg = Release|Any CPU
+		{AB7E236E-B261-401A-82F9-1DAC75E1A18C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2499,6 +2527,8 @@ Global
 		{73F3B010-771D-499D-AEB8-CB1908591ACA} = {33024F16-30A8-4A2A-96A3-67FA2B5DAA6F}
 		{404DA6BB-9E3B-4914-A23F-FA950C59BCF9} = {F26E6439-A1C0-4CF6-A015-506238D75605}
 		{5E90DA03-7A8A-48C8-A124-26BFC0172659} = {404DA6BB-9E3B-4914-A23F-FA950C59BCF9}
+		{578FCC12-D725-4069-A353-AEC5178A07E5} = {FA972DE8-A6BB-4672-9907-25AFD16948B1}
+		{AB7E236E-B261-401A-82F9-1DAC75E1A18C} = {FA972DE8-A6BB-4672-9907-25AFD16948B1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {498C29EF-0474-4C7D-A825-BB7F36FA1E99}
