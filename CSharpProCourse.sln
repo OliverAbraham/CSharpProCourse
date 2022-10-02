@@ -86,9 +86,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "14 State machine", "14 Stat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strategy Pattern", "Strategy Pattern", "{F5EBA806-9BA8-46A4-83C9-ED102C4E2760}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Factory pattern", "Factory pattern", "{124C32D7-1695-47F9-B5E0-AA20C6242BDA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Factory", "Factory", "{124C32D7-1695-47F9-B5E0-AA20C6242BDA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nullobject pattern", "Nullobject pattern", "{21096974-974F-4CF8-9952-1FC5D492F851}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nullobject", "Nullobject", "{21096974-974F-4CF8-9952-1FC5D492F851}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "REST", "REST", "{B8474518-A430-41B4-9EB4-DC4D0C66613A}"
 EndProject
@@ -202,7 +202,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinTSDemoCommandline", "Fin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libfintx", "FinTSDemoCommandline\libfintx\libfintx.csproj", "{28E7C44D-FB79-42E1-9789-1FCF0C96C73F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Retry Pattern", "Retry Pattern", "{FD07E964-4CF2-4946-A0FF-26D134E65135}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Retry", "Retry", "{FD07E964-4CF2-4946-A0FF-26D134E65135}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PollyRetryPattern", "Retry Pattern\PollyRetryPattern.csproj", "{00342E84-8024-4BD5-B8A2-9797A9D5BB3B}"
 EndProject
@@ -525,6 +525,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern - Dependency Injection", "Pattern - Dependency Injection\Pattern - Dependency Injection.csproj", "{1C826F14-C09A-455B-9BCA-4648BB1582F8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern - Factory Pattern", "Pattern - Factory Pattern\Pattern - Factory Pattern.csproj", "{03C2CE74-1852-4323-8C9E-916044B9BA7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Circuit breaker", "Circuit breaker", "{7866D6FA-A455-4FF4-A1A5-9A8099564BCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern - Nullobject Pattern", "Pattern - Nullobject Pattern\Pattern - Nullobject Pattern.csproj", "{2D107EB4-4FF1-47A5-9AA2-B80CC332A278}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2252,6 +2256,18 @@ Global
 		{03C2CE74-1852-4323-8C9E-916044B9BA7E}.Release|x64.Build.0 = Release|Any CPU
 		{03C2CE74-1852-4323-8C9E-916044B9BA7E}.Release|x86.ActiveCfg = Release|Any CPU
 		{03C2CE74-1852-4323-8C9E-916044B9BA7E}.Release|x86.Build.0 = Release|Any CPU
+		{2D107EB4-4FF1-47A5-9AA2-B80CC332A278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D107EB4-4FF1-47A5-9AA2-B80CC332A278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D107EB4-4FF1-47A5-9AA2-B80CC332A278}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2D107EB4-4FF1-47A5-9AA2-B80CC332A278}.Debug|x64.Build.0 = Debug|Any CPU
+		{2D107EB4-4FF1-47A5-9AA2-B80CC332A278}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2D107EB4-4FF1-47A5-9AA2-B80CC332A278}.Debug|x86.Build.0 = Debug|Any CPU
+		{2D107EB4-4FF1-47A5-9AA2-B80CC332A278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D107EB4-4FF1-47A5-9AA2-B80CC332A278}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D107EB4-4FF1-47A5-9AA2-B80CC332A278}.Release|x64.ActiveCfg = Release|Any CPU
+		{2D107EB4-4FF1-47A5-9AA2-B80CC332A278}.Release|x64.Build.0 = Release|Any CPU
+		{2D107EB4-4FF1-47A5-9AA2-B80CC332A278}.Release|x86.ActiveCfg = Release|Any CPU
+		{2D107EB4-4FF1-47A5-9AA2-B80CC332A278}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2484,6 +2500,8 @@ Global
 		{AB7E236E-B261-401A-82F9-1DAC75E1A18C} = {FA972DE8-A6BB-4672-9907-25AFD16948B1}
 		{1C826F14-C09A-455B-9BCA-4648BB1582F8} = {7B840E14-983A-4859-9E34-85E89D89FF36}
 		{03C2CE74-1852-4323-8C9E-916044B9BA7E} = {124C32D7-1695-47F9-B5E0-AA20C6242BDA}
+		{7866D6FA-A455-4FF4-A1A5-9A8099564BCD} = {28205355-BC76-429D-8A3D-B5E026BD76CE}
+		{2D107EB4-4FF1-47A5-9AA2-B80CC332A278} = {21096974-974F-4CF8-9952-1FC5D492F851}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {498C29EF-0474-4C7D-A825-BB7F36FA1E99}
