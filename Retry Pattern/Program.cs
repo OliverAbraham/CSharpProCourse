@@ -27,27 +27,39 @@ class Program
 
 		Console.WriteLine("Simulating a action that fails every 5th time.");
 		Console.WriteLine("Polly should retry it if an error occurs.");
-		policy.Execute(
-			delegate()
-			{
-				Console.WriteLine($"Sequence is started from the beginning");
-				do
+
+		Console.WriteLine($"\n\n\nSequence starts now:");
+		do
+		{
+			_loopcounter++;
+
+			policy.Execute(
+				delegate()
 				{
 					Do_something_and_simulate_a_fault_every_fifth_time();
-					Thread.Sleep(1000);
-				} while (!Console.KeyAvailable);
-			});
-	}
+				});
 
+			Thread.Sleep(1000);
+		} while (!Console.KeyAvailable && _loopcounter < 15);
+
+		Console.WriteLine($"\n\nDemo ended.\nNotice that Polly has retried Loop action no. 5, 9 and 13 !");
+	}
+	 
+	private static int _loopcounter = 0;
 	private static int _counter = 0;
 
 	private static void Do_something_and_simulate_a_fault_every_fifth_time()
 	{
+		Console.WriteLine($"	- Loop action no. {_loopcounter}...");
+		SimulateAnErrorEveryFifthTime();
+	}
+
+	private static void SimulateAnErrorEveryFifthTime()
+	{
 		_counter++;
-		Console.WriteLine($"Call no. {_counter}...");
 		if ((_counter % 5) == 0)
 		{
-			Console.WriteLine($"Throwing an exception for demonstration!");
+			Console.WriteLine($"	- Throwing an exception, this should simulate a fault! Polly should 'retry' this run");
 			throw new MyDatabaseException();
 		}
 	}
