@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MailKit" Version="3.4.1" />
+    <PackageReference Include="Abraham.Mail" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
