@@ -1,80 +1,75 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
-
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Calendar.v3;
 using Google.Apis.Calendar.v3.Data;
 using Google.Apis.Services;
 using Google.Apis.Util.Store;
 
-
-
 namespace CoogleCalendarAPI
 {
     class Program
     {
-        // If modifying these scopes, delete your previously saved credentials
-        // at ~/.credentials/calendar-dotnet-quickstart.json
-        static string[] Scopes = { CalendarService.Scope.CalendarReadonly };
-        static string ApplicationName = "Google Calendar API .NET Quickstart";
-
         static void Main(string[] args)
         {
-            UserCredential credential;
+            var credentials = Authenticate();
+            var events = ReadAllEvents(credentials);
+            Print(events);
+        }
 
-            using (var stream =
-                new FileStream("credentials.json", FileMode.Open, FileAccess.Read))
+        private static UserCredential Authenticate()
+        {
+            // If modifying these scopes, delete your previously saved credentials
+            // at ~/.credentials/calendar-dotnet-quickstart.json
+            string[] scopes = { CalendarService.Scope.CalendarReadonly };
+
+            GoogleClientSecrets secrets;
+            using (var stream = new FileStream(@"C:\Credentials\CsharpProCourse-GoogleCalenderApiDemo-credentials.json", FileMode.Open, FileAccess.Read))
             {
-                string credPath = "token.json";
-                credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
-                    GoogleClientSecrets.Load(stream).Secrets,
-                    Scopes,
-                    "user",
-                    CancellationToken.None,
-                    new FileDataStore(credPath, true)).Result;
-                Console.WriteLine("Credential file saved to: " + credPath);
+                secrets = GoogleClientSecrets.Load(stream);
             }
 
-            // Create Google Calendar API service.
+            string credPath = @"C:\Credentials\CsharpProCourse-GoogleCalenderApiDemo-token.json";
+            var credentials = GoogleWebAuthorizationBroker.AuthorizeAsync(secrets.Secrets, scopes, "user", CancellationToken.None, new FileDataStore(credPath, true)).Result;
+            Console.WriteLine("Credential file saved to: " + credPath);
+            return credentials;
+        }
+
+        private static List<Event> ReadAllEvents(UserCredential credentials)
+        {
+            var results = new List<Event>();
+
             var service = new CalendarService(new BaseClientService.Initializer()
             {
-                HttpClientInitializer = credential,
-                ApplicationName = ApplicationName,
+                HttpClientInitializer = credentials,
+                ApplicationName = "Google Calendar API .NET Quickstart"
             });
 
-            // Define parameters of request.
-            EventsResource.ListRequest request = service.Events.List("primary");
-            request.TimeMin = DateTime.Now;
-            request.ShowDeleted = false;
+            var request          = service.Events.List("primary");
+            request.TimeMin      = DateTime.Now;
+            request.ShowDeleted  = false;
             request.SingleEvents = true;
-            request.MaxResults = 100;
-            request.OrderBy = EventsResource.ListRequest.OrderByEnum.StartTime;
+            request.MaxResults   = 100;
+            request.OrderBy      = EventsResource.ListRequest.OrderByEnum.StartTime;
 
-            // List events.
             Events events = request.Execute();
-            Console.WriteLine("Upcoming events:");
             if (events.Items != null && events.Items.Count > 0)
             {
-                foreach (var eventItem in events.Items)
-                {
-                    string when = eventItem.Start.DateTime.ToString();
-                    if (String.IsNullOrEmpty(when))
-                    {
-                        when = eventItem.Start.Date;
-                    }
-                    Console.WriteLine("{0} ({1})", eventItem.Summary, when);
-                }
+                results.AddRange(events.Items);
             }
-            else
+
+            return results;
+        }
+
+        private static void Print(List<Event> events)
+        {
+            foreach (var @event in events)
             {
-                Console.WriteLine("No upcoming events found.");
+                var summary = @event.Summary;
+                Console.WriteLine($"{summary.Substring(0, Math.Min(summary.Length, 50)),-50} {@event?.Start?.Date,-20} {@event?.Start?.DateTime,-20} - {@event?.End?.DateTime,-20}");
             }
-            Console.Read();
         }
     }
 }
