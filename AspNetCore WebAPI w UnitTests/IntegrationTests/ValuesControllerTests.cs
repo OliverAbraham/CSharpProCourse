@@ -1,6 +1,5 @@
 using AspNetCore_WebAPI_w_UnitTests;
 using Microsoft.AspNetCore.Mvc.Testing;
-using System;
 using System.Threading.Tasks;
 using Xunit;
 
