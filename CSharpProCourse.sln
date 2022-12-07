@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.1.31911.260
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 README", "00 README", "{A33B0CBE-9D88-457E-B40D-F6D8ABDDC6F0}"
 	ProjectSection(SolutionItems) = preProject
@@ -547,6 +547,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Outlook Contacts (CRUD)", "Outlook Contacts (CRUD)", "{C19B8EAC-C3F4-4628-96C8-03971E5236B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutlookContacts", "OutlookContacts (CRUD)\OutlookContactsSync\OutlookContacts.csproj", "{28300099-3736-4F2C-B7BB-D2FAF8854F1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "23 Benchmarking", "23 Benchmarking", "{ED8C333A-D9C2-4159-B36D-115A93E6013C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenchmarkingWithBenchmarkDotNet", "BenchmarkingWithBenchmarkDotNet\BenchmarkingWithBenchmarkDotNet.csproj", "{BB67F431-BA23-4EE4-8972-71B0BA05912F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2334,6 +2338,18 @@ Global
 		{28300099-3736-4F2C-B7BB-D2FAF8854F1F}.Release|x64.Build.0 = Release|Any CPU
 		{28300099-3736-4F2C-B7BB-D2FAF8854F1F}.Release|x86.ActiveCfg = Release|Any CPU
 		{28300099-3736-4F2C-B7BB-D2FAF8854F1F}.Release|x86.Build.0 = Release|Any CPU
+		{BB67F431-BA23-4EE4-8972-71B0BA05912F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB67F431-BA23-4EE4-8972-71B0BA05912F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB67F431-BA23-4EE4-8972-71B0BA05912F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BB67F431-BA23-4EE4-8972-71B0BA05912F}.Debug|x64.Build.0 = Debug|Any CPU
+		{BB67F431-BA23-4EE4-8972-71B0BA05912F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BB67F431-BA23-4EE4-8972-71B0BA05912F}.Debug|x86.Build.0 = Debug|Any CPU
+		{BB67F431-BA23-4EE4-8972-71B0BA05912F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB67F431-BA23-4EE4-8972-71B0BA05912F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB67F431-BA23-4EE4-8972-71B0BA05912F}.Release|x64.ActiveCfg = Release|Any CPU
+		{BB67F431-BA23-4EE4-8972-71B0BA05912F}.Release|x64.Build.0 = Release|Any CPU
+		{BB67F431-BA23-4EE4-8972-71B0BA05912F}.Release|x86.ActiveCfg = Release|Any CPU
+		{BB67F431-BA23-4EE4-8972-71B0BA05912F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2575,6 +2591,7 @@ Global
 		{22C2C3EC-F914-4FC3-9DE2-D816FC3719BA} = {980C67CE-25ED-4104-A46E-6C800FFBFD05}
 		{C19B8EAC-C3F4-4628-96C8-03971E5236B5} = {22C2C3EC-F914-4FC3-9DE2-D816FC3719BA}
 		{28300099-3736-4F2C-B7BB-D2FAF8854F1F} = {C19B8EAC-C3F4-4628-96C8-03971E5236B5}
+		{BB67F431-BA23-4EE4-8972-71B0BA05912F} = {ED8C333A-D9C2-4159-B36D-115A93E6013C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {498C29EF-0474-4C7D-A825-BB7F36FA1E99}
