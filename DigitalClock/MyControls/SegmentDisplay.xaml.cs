@@ -7,7 +7,7 @@ namespace MyControls
 	public partial class SegmentDisplay : UserControl
     {
         private SolidColorBrush _FillColor  = new SolidColorBrush(Color.FromRgb(0xA6, 0x04, 0x21));
-        private SolidColorBrush _EmptyColor = new SolidColorBrush(Color.FromRgb(0xEE, 0xEE, 0xEE));
+        private SolidColorBrush _EmptyColor = new SolidColorBrush(Color.FromRgb(0x11, 0x11, 0x11));
 
         public SegmentDisplay()
         {

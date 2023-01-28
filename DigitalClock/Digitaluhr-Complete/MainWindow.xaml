@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Digitaluhr_Complete"
         xmlns:MyControls="clr-namespace:MyControls;assembly=MyControls" x:Class="Digitaluhr_Complete.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="337" Width="992.2" ResizeMode="NoResize">
+        Title="MainWindow" Height="337" Width="992.2" ResizeMode="NoResize" Background="Black">
     <Grid>
         <StackPanel Orientation="Horizontal">
             <MyControls:SegmentDisplay Name="Hour10"   HorizontalAlignment="Stretch" Margin="0,0,0,0"  VerticalAlignment="Stretch" Width="225"/>

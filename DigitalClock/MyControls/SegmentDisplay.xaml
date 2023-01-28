@@ -7,12 +7,12 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <Rectangle Name="a" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20"  Width="100" Margin="85,34,0,0"   Stroke="#ffeeeeee" VerticalAlignment="Top"/>
-        <Rectangle Name="b" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Width="20"  Margin="190,45,0,0"  Stroke="#ffeeeeee" VerticalAlignment="Top"/>
-        <Rectangle Name="c" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Width="20"  Margin="190,152,0,0" Stroke="#ffeeeeee" VerticalAlignment="Top"/>
-        <Rectangle Name="d" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20"  Width="100" Margin="86,241,0,0"  Stroke="#ffeeeeee" VerticalAlignment="Top"/>
-        <Rectangle Name="e" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Width="20"  Margin="61,152,0,0"  Stroke="#ffeeeeee" VerticalAlignment="Top"/>
-        <Rectangle Name="f" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Width="20"  Margin="61,45,0,0"   Stroke="#ffeeeeee" VerticalAlignment="Top"/>
-        <Rectangle Name="g" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20"  Width="100" Margin="86,139,0,0"  Stroke="#ffeeeeee" VerticalAlignment="Top"/>
+        <Rectangle Name="a" Fill="#FF111111" HorizontalAlignment="Left" Height="20"  Width="100" Margin="85,34,0,0"   Stroke="#ff222222" VerticalAlignment="Top"/>
+        <Rectangle Name="b" Fill="#FF111111" HorizontalAlignment="Left" Height="100" Width="20"  Margin="190,45,0,0"  Stroke="#ff222222" VerticalAlignment="Top"/>
+        <Rectangle Name="c" Fill="#FF111111" HorizontalAlignment="Left" Height="100" Width="20"  Margin="190,152,0,0" Stroke="#ff222222" VerticalAlignment="Top"/>
+        <Rectangle Name="d" Fill="#FF111111" HorizontalAlignment="Left" Height="20"  Width="100" Margin="86,241,0,0"  Stroke="#ff222222" VerticalAlignment="Top"/>
+        <Rectangle Name="e" Fill="#FF111111" HorizontalAlignment="Left" Height="100" Width="20"  Margin="61,152,0,0"  Stroke="#ff222222" VerticalAlignment="Top"/>
+        <Rectangle Name="f" Fill="#FF111111" HorizontalAlignment="Left" Height="100" Width="20"  Margin="61,45,0,0"   Stroke="#ff222222" VerticalAlignment="Top"/>
+        <Rectangle Name="g" Fill="#FF111111" HorizontalAlignment="Left" Height="20"  Width="100" Margin="86,139,0,0"  Stroke="#ff222222" VerticalAlignment="Top"/>
     </Grid>
 </UserControl>
