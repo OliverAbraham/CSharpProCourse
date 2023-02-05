@@ -53,7 +53,7 @@ namespace WebDAV_client
             }
             var reader = new StreamReader(response.Stream, Encoding.UTF8, detectEncodingFromByteOrderMarks:true);
             var content = reader.ReadToEnd();
-            Console.WriteLine($"File content is: {content}");
+            Console.WriteLine($"Loaded file from nextcloud server. File content is: {content}");
 
 
             // just add some text
@@ -62,7 +62,7 @@ namespace WebDAV_client
 
 
             // and save back the file
-            Console.WriteLine($"Saving...");
+            Console.WriteLine($"Saving to nextcloud...");
             var stream = new MemoryStream();
             var writer = new StreamWriter(stream, Encoding.UTF8);
             writer.Write(content);
