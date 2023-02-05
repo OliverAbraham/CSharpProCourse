@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Parsing_HTML_with_HTML_Agility_Pack": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:50277;http://localhost:50279"
+    }
+  }
+}

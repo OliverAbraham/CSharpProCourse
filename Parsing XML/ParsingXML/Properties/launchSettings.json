@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Parsing_XML_with_XPathExpression": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:50221;http://localhost:50222"
+    }
+  }
+}
