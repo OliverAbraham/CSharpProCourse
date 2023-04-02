@@ -17,6 +17,7 @@ namespace CoogleCalendarAPI
             var credentials = Authenticate();
             var events = ReadAllEvents(credentials);
             Print(events);
+            Console.ReadKey();
         }
 
         private static UserCredential Authenticate()
