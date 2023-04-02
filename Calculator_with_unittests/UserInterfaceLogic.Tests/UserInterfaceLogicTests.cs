@@ -1,8 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FluentAssertions;
-using BusinessLogic;
-using System;
-using UserInterfaceLogic;
+﻿using FluentAssertions;
 using Contracts;
 
 namespace UserInterfaceLogic.Tests
@@ -38,11 +34,31 @@ namespace UserInterfaceLogic.Tests
         }
 
         [TestMethod()]
-        public void Should_process_equal_key_correctly()
+        public void Should_process_equal_key_correctly1()
         {
             Setup();
             actual = sut.Process_key_pressure_and_return_new_display_text("=");
             actual.Should().Be("0", "we didn't press any digit key");
+        }
+
+        [TestMethod()]
+        public void Should_process_equal_key_correctly2()
+        {
+            Setup();
+            actual = sut.Process_key_pressure_and_return_new_display_text("\r");
+            actual.Should().Be("0", "we didn't press any digit key");
+        }
+
+        [TestMethod()]
+        public void Should_handle_invalid_operator()
+        {
+            Setup();
+            FluentActions.Invoking(
+                delegate 
+                {
+                    sut.Process_key_pressure_and_return_new_display_text("*");
+                })
+            .Should().Throw<NotImplementedException>();
         }
 
         [TestMethod()]

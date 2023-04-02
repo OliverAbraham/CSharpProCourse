@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2023-04-02_16-30-40" tag="">
+  <assembly name="BusinessLogic">
+    <class name="BusinessLogic.Calculator" coveredlines="17" coverablelines="17" totallines="42" coveredbranches="0" totalbranches="0" coveredcodeelements="7" totalcodeelements="7" />
+  </assembly>
+  <assembly name="Contracts" />
+</coverage>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2023-04-02_16-21-14" tag="">
+  <assembly name="BusinessLogic">
+    <class name="BusinessLogic.Calculator" coveredlines="0" coverablelines="17" totallines="42" coveredbranches="0" totalbranches="0" coveredcodeelements="0" totalcodeelements="7" />
+  </assembly>
+  <assembly name="Contracts" />
+  <assembly name="UserInterfaceLogic">
+    <class name="UserInterfaceLogic.CalculatorUI" coveredlines="30" coverablelines="31" totallines="63" coveredbranches="13" totalbranches="14" coveredcodeelements="4" totalcodeelements="4" />
+  </assembly>
+</coverage>
