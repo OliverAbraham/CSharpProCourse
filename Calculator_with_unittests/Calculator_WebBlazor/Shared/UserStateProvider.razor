@@ -1,0 +1,117 @@
+﻿@using Microsoft.JSInterop
+@using System.Net.Http
+@inject NavigationManager NavManager
+@inject HttpClient HttpClient
+@inject IJSRuntime JsRuntime
+
+@functions {
+    #region ------------- Properties ----------------------------------------------------------
+    [Parameter] public RenderFragment ChildContent { get; set; }
+
+    public UILib Ui { get; private set; }
+    public UserState CurrentUser { get { return _CurrentUser; } private set { _CurrentUser = value; } }
+    public bool IsLoggedIn => CurrentUser?.IsLoggedIn ?? false;
+    public string EntryLanguage { get; set; }
+    #endregion
+
+
+
+    #region ------------- Delegates ---------------------------------------------------------------
+    public delegate void SetLanguage_Handler();
+    public SetLanguage_Handler SetUILanguage
+    {
+        get { return _setUILanguage; }
+        set { _setUILanguage = (value != null) ? value : delegate () { }; }
+    }
+    private SetLanguage_Handler _setUILanguage = delegate () { };
+
+    public SetLanguage_Handler SetOrderProcessLanguage
+    {
+        get { return _setOrderProcessLanguage; }
+        set { _setOrderProcessLanguage = (value != null) ? value : delegate () { }; }
+    }
+    private SetLanguage_Handler _setOrderProcessLanguage = delegate () { };
+    #endregion
+
+
+
+    #region ------------- Special Top bar buttons -------------------------------------------------
+    public void DeButtonClick() { _deButton(); }
+    public SetLanguage_Handler DeButton
+    {
+        get { return _deButton; }
+        set { _deButton = (value != null) ? value : delegate () { }; }
+    }
+    private SetLanguage_Handler _deButton = delegate () { };
+
+    public void EnButtonClick() { _enButton(); }
+    public SetLanguage_Handler EnButton
+    {
+        get { return _enButton; }
+        set { _enButton = (value != null) ? value : delegate () { }; }
+    }
+    private SetLanguage_Handler _enButton = delegate () { };
+
+    public void LogoButnClick() { _logoButn(); }
+    public SetLanguage_Handler LogoButn
+    {
+        get { return _logoButn; }
+        set { _logoButn = (value != null) ? value : delegate () { }; }
+    }
+    private SetLanguage_Handler _logoButn = delegate () { };
+    #endregion
+
+
+
+    #region ------------- Fields --------------------------------------------------------------
+    private List<TaskCompletionSource<bool>> pendingSignInFlows = new List<TaskCompletionSource<bool>>();
+    private static UserState _CurrentUser;
+    #endregion
+
+
+
+    #region ------------- Init ----------------------------------------------------------------
+    public UserStateProvider()
+    {
+        Ui = new UILib(JsRuntime, StateHasChanged, this, HttpClient);
+    }
+    #endregion
+
+
+
+    #region ------------- Methods -------------------------------------------------------------
+#pragma warning disable 1998
+    public async Task SignOut()
+    {
+        // Transition to "loading" state synchronously, then asynchronously update
+        CurrentUser = null;
+        //StateHasChanged();
+        ////CurrentUser = await HttpClient.PutJsonAsync<UserState>("user/signout", null);
+        //StateHasChanged();
+    }
+
+    [JSInvokable]
+    public void OnSignInStateChanged(UserState newUserState)
+    {
+        if (newUserState == null)
+            throw new Exception("newUserState cannot be null");
+        CurrentUser = newUserState;
+        //Ui.SetLanguage(newUserState.Language);
+        Ui.WaitAndThenExecute(100, delegate() { SetUILanguage(); });
+
+        foreach (var tcs in pendingSignInFlows)
+            tcs.SetResult(newUserState.IsLoggedIn);
+    }
+
+    public System.Net.Http.Headers.AuthenticationHeaderValue GetAuthorizationHeader()
+    {
+        if (CurrentUser == null)
+            return null;
+
+        string Credentials = string.Format("{0}:{1}", CurrentUser.UserName, CurrentUser.UserHash);
+        string CredentialsBase64 = Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(Credentials));
+        var Header = new System.Net.Http.Headers.AuthenticationHeaderValue("Authorization", CredentialsBase64);
+        return Header;
+    }
+    #endregion
+}
