@@ -1,15 +1,24 @@
 # C# Pro Course
 
-This repository contains several demo programs from my C# Pro Course.
+![](https://img.shields.io/github/downloads/oliverabraham/CSharpProCourse/total) ![](https://img.shields.io/github/license/oliverabraham/CSharpProCourse) ![](https://img.shields.io/github/languages/count/oliverabraham/CSharpProCourse) ![GitHub Repo stars](https://img.shields.io/github/stars/oliverabraham/CSharpProCourse?label=repo%20stars) ![GitHub Repo stars](https://img.shields.io/github/stars/oliverabraham?label=user%20stars)
 
-# Logging
+
+# OVERVIEW
+
+This repository contains several demo programs from my C# Base Course.
+Even without my course, you can use this repository to learn C#.
+
+
+
+
+
+# Chapters
+
+## Logging
 - Implements a simple logger 
 - A better logger with log rotation, using NLog
 
-
-
-
-# File Formats
+## File Formats
 
 ### HTML
 #### Parsing HTML
@@ -37,7 +46,7 @@ This repository contains several demo programs from my C# Pro Course.
 
 
 
-# Common protocols
+## Common protocols
 ### Email
 #### Email clients
 - Reading an inbox using the POP3 protocol
@@ -60,7 +69,7 @@ This repository contains several demo programs from my C# Pro Course.
 
 
 
-# Common pattern
+## Common pattern
 - Circuit breaker
 - Dependency injection
 - Factory
@@ -72,67 +81,98 @@ This repository contains several demo programs from my C# Pro Course.
 
 
 
-# Common algorithms
-## Percentage display
+## Common algorithms
+### Percentage display
 - How to calculate and display the progress of a longer action in percent
 
-## State machine
-## Regular expressions
-## File locking
-## Hashing
-## Command line parser
-## Process sychronisation
+### State machine
+### Regular expressions
+### File locking
+### Hashing
+### Command line parser
+### Process sychronisation
 
 
 
-# CSharp features
+## CSharp features
 
 
 
-# Messaging
+## Messaging
 
 
 
-# Popular APIs
+## Popular APIs
 
 
+## Office
 
 
-# Office
+## Architecture examples
 
 
-
-# Architecture examples
-
+## Unit testing
 
 
-# Unit testing
+## Frontend testing
 
 
-
-# Frontend testing
-
+## Benchmarking
 
 
-# benchmarking
+## WPF related examples
 
 
-
-# WPF related examples
-
+## Interview questions
 
 
-# Interview questions
+## Web related examples
 
 
-# Web related examples
+## More examples
 
 
-# More examples
-
-
-## Pushbullet client
+### Pushbullet client
 - Sending a notification to a mobile phone using the Pushbullet service
 
-## Calculator as Console,WPF, with unit tests
-## File copy program with percentage and remaining time estimation
+### Calculator as Console,WPF, with unit tests
+### File copy program with percentage and remaining time estimation
+
+
+
+
+
+# License
+
+Licensed under Apache licence.
+https://www.apache.org/licenses/LICENSE-2.0
+
+
+# Compatibility
+
+The nuget package was build with DotNET 6.
+
+
+
+# AUTHOR
+
+Oliver Abraham, mail@oliver-abraham.de, https://www.oliver-abraham.de
+
+Please feel free to comment and suggest improvements!
+
+
+
+# SOURCE CODE
+
+The source code is hosted at:
+
+https://github.com/OliverAbraham/CSharpProCourse
+
+
+
+
+# MAKE A DONATION !
+If you find this application useful, buy me a coffee!
+I would appreciate a small donation on https://www.buymeacoffee.com/oliverabraham
+
+<a href="https://www.buymeacoffee.com/app/oliverabraham" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
