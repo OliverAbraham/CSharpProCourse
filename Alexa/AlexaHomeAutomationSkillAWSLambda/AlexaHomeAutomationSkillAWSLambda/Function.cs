@@ -144,12 +144,12 @@ namespace AlexaHomeAutomationSkillAWSLambda
             if (WordpressQueryClient != null)
             {
                 // Wir sprechen die REST-API von Wordpress an, um eine festgelegte Seite zu holen
-                var Request = new RestRequest("/wp-json/wp/v2/pages/71", Method.GET);
+                var Request = new RestRequest("/wp-json/wp/v2/pages/71", Method.Get);
                 if (Request == null)
                     logger.LogLine($"WordpressQueryClient Request unsuccesful!");
                 else
                 {
-                    IRestResponse<WordpressPageResponse> Response = WordpressQueryClient.Execute<WordpressPageResponse>(Request);
+                    RestResponse<WordpressPageResponse> Response = WordpressQueryClient.Execute<WordpressPageResponse>(Request);
                     if (Response == null)
                         logger.LogLine($"WordpressQueryClient Execute unsuccesful!");
                     else
