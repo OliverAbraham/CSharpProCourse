@@ -1,4 +1,6 @@
 ﻿using NLog;
+using System;
+using System.Threading.Tasks;
 
 namespace Logging_simple
 {
@@ -8,10 +10,17 @@ namespace Logging_simple
 
 		static void Main(string[] args) 
         {
+            Console.WriteLine("Press any key to end this program!");
+
             InitLogging();
 
-            var myClass = new MyClassDoingSomething(_logger);
-            myClass.DoSomething();
+            do
+            {
+                var myClass = new MyClassDoingSomething(_logger);
+                myClass.DoSomething();
+                Task.Delay(5000).Wait();
+            }
+            while (!Console.KeyAvailable);
         }
 
         private static void InitLogging()

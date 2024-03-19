@@ -557,7 +557,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp1", "Calculator_wi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Signal Messenger", "Signal Messenger", "{2AC8DDA1-EE81-4356-885D-A9B0FDC0E30F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalMessengerClient", "SignalMessengerClient\SignalMessengerClient.csproj", "{3EB79479-D2E4-40BE-A99E-696CEB04FF8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalMessengerClient", "SignalMessengerClient\SignalMessengerClient.csproj", "{3EB79479-D2E4-40BE-A99E-696CEB04FF8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingTestContainer", "LoggingTestContainer\LoggingTestContainer.csproj", "{AC50547B-C489-4509-A5C4-A11A0B73CB6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2333,6 +2335,18 @@ Global
 		{3EB79479-D2E4-40BE-A99E-696CEB04FF8C}.Release|x64.Build.0 = Release|Any CPU
 		{3EB79479-D2E4-40BE-A99E-696CEB04FF8C}.Release|x86.ActiveCfg = Release|Any CPU
 		{3EB79479-D2E4-40BE-A99E-696CEB04FF8C}.Release|x86.Build.0 = Release|Any CPU
+		{AC50547B-C489-4509-A5C4-A11A0B73CB6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC50547B-C489-4509-A5C4-A11A0B73CB6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC50547B-C489-4509-A5C4-A11A0B73CB6C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AC50547B-C489-4509-A5C4-A11A0B73CB6C}.Debug|x64.Build.0 = Debug|Any CPU
+		{AC50547B-C489-4509-A5C4-A11A0B73CB6C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AC50547B-C489-4509-A5C4-A11A0B73CB6C}.Debug|x86.Build.0 = Debug|Any CPU
+		{AC50547B-C489-4509-A5C4-A11A0B73CB6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC50547B-C489-4509-A5C4-A11A0B73CB6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC50547B-C489-4509-A5C4-A11A0B73CB6C}.Release|x64.ActiveCfg = Release|Any CPU
+		{AC50547B-C489-4509-A5C4-A11A0B73CB6C}.Release|x64.Build.0 = Release|Any CPU
+		{AC50547B-C489-4509-A5C4-A11A0B73CB6C}.Release|x86.ActiveCfg = Release|Any CPU
+		{AC50547B-C489-4509-A5C4-A11A0B73CB6C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2595,6 +2609,7 @@ Global
 		{33FCEF57-6D0F-4391-AC3D-883F139DE74C} = {3C5C4B06-0101-4BE2-AD2D-9E0BACC12D6A}
 		{2AC8DDA1-EE81-4356-885D-A9B0FDC0E30F} = {06665B6A-6DA6-4ED3-A8F1-500221B69789}
 		{3EB79479-D2E4-40BE-A99E-696CEB04FF8C} = {2AC8DDA1-EE81-4356-885D-A9B0FDC0E30F}
+		{AC50547B-C489-4509-A5C4-A11A0B73CB6C} = {00A4BBC5-B56B-495F-B159-06832563615E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {498C29EF-0474-4C7D-A825-BB7F36FA1E99}
