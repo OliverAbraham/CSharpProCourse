@@ -9,19 +9,18 @@ using System.Text;
 
 Console.WriteLine("Doing a REST call to an endpoint that returns JSON, with authentication");
 
-var client = new RestClient();
-//var request = new RestRequest("https://www.lentfoehrden.de/wp-json", Method.Get);
-var request = new RestRequest("https://www.lentfoehrden.de/wp-json/wp/v2/posts", Method.Get);
-
 // Adding authentication data. If this is failing, we will get StatusCode 401 "unauthorized" as response
-var username = "USERNAME";
-var password = "PASSWORD";
-client.Authenticator = new HttpBasicAuthenticator(username, password);
+var username = File.ReadAllText(@"C:\Credentials\LentfoehrdenAPIUsername.txt"); // "USERNAME";
+var password = File.ReadAllText(@"C:\Credentials\LentfoehrdenAPIPassword.txt"); // "PASSWORD";
+
+
+// just for curiosity, what header will be sent
 var test = Convert.ToBase64String(Encoding.UTF8.GetBytes($"{username}:{password}"));
 
-
+var request = new RestRequest("https://www.lentfoehrden.de/wp-json/wp/v2/posts", Method.Get);
+var client = new RestClient();
+client.Authenticator = new HttpBasicAuthenticator(username, password);
 RestResponse response = await client.ExecuteGetAsync(request);
-var content = response.Content; // raw content as string
 
 Console.WriteLine($"Response was             {response.StatusDescription}");
 Console.WriteLine($"Response has ContentType {response.ContentType}");
@@ -35,8 +34,10 @@ Console.WriteLine($"Response has Encoding    {response.ContentEncoding}");
 if (response.StatusCode != System.Net.HttpStatusCode.OK)
     return;
 
+//var content = response.Content; // raw content as string
 var myDeserializedClass = JsonConvert.DeserializeObject<List<Root>>(response.Content);
 
 Console.WriteLine($"\n\n\nPosts");
 foreach(var post in myDeserializedClass)
     Console.WriteLine($"{post.slug,-100} {post.link}");
+
